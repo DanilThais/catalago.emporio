@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maquiagem - Catálogos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-color: #fff3f6;
+      color: #333;
+    }
+    h1 {
+      color: #75001e;
+    }
+    button {
+      margin: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      background-color: #75001e;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #5c0016;
+    }
+    iframe {
+      margin-top: 2rem;
+      width: 90%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Maquiagem</h1>
+
+  <div>
+    <button onclick="abrirPDF('https://www.africau.edu/images/default/sample.pdf')">Catálogo 1</button>
+    <button onclick="abrirPDF('https://www.orimi.com/pdf-test.pdf')">Catálogo 2</button>
+  </div>
+
+  <iframe id="viewer" src=""></iframe>
+
+  <script>
+    function abrirPDF(url) {
+      document.getElementById('viewer').src = url;
+    }
+  </script>
+
+</body>
+</html>
