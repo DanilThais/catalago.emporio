@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Empório Dubai Perfumaria - Catálogos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff3f6;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      color: #75001e;
+      font-size: 2.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 0 2rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: linear-gradient(to top, #75001e, #c35a6e50);
+      border-radius: 12px;
+      overflow: hidden;
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nossos Catálogos</h1>
+  </header>
+
+  <section class="grid">
+    <a class="card" href="perfumes-femininos.html">
+  <img src="https://images.unsplash.com/photo-1607082349566-187342175e2d" alt="Perfumes Femininos" />
+  <div class="card-content">
+    <div class="card-title">Perfumes Femininos</div>
+    <div class="card-text">Fragrâncias exclusivas para mulheres</div>
+  </div>
+</a>
+<a class="card" href="perfumes-masculinos.html">
+  <img src="https://images.unsplash.com/photo-1587049352849-5a43d55b1707" alt="Perfumes Masculinos" />
+  <div class="card-content">
+    <div class="card-title">Perfumes Masculinos</div>
+    <div class="card-text">Fragrâncias sofisticadas para homens</div>
+  </div>
+</a>
+<a class="card" href="hidratantes.html">
+  <img src="https://images.unsplash.com/photo-1612392062504-6cc9e297129e" alt="Hidratantes" />
+  <div class="card-content">
+    <div class="card-title">Hidratantes</div>
+    <div class="card-text">Produtos para hidratação corporal</div>
+  </div>
+</a>
+<a class="card" href="maquiagem.html">
+  <img src="https://images.unsplash.com/photo-1596464716121-bf123f2f36f3" alt="Maquiagem" />
+  <div class="card-content">
+    <div class="card-title">Maquiagem</div>
+    <div class="card-text">Produtos de beleza e maquiagem</div>
+  </div>
+</a>
+<a class="card" href="skincare.html">
+  <img src="https://images.unsplash.com/photo-1611078489935-e9d3c85f2c8d" alt="Skincare" />
+  <div class="card-content">
+    <div class="card-title">Skincare</div>
+    <div class="card-text">Cuidados especiais para a pele</div>
+  </div>
+</a>
+<a class="card" href="cabelos.html">
+  <img src="https://images.unsplash.com/photo-1588776814546-ec14df2c78b4" alt="Cabelos" />
+  <div class="card-content">
+    <div class="card-title">Cabelos</div>
+    <div class="card-text">Produtos para cuidados capilares</div>
+  </div>
+</a>
+
+  </section>
+
+  <footer>
+    © 2025 Empório Dubai Perfumaria. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
