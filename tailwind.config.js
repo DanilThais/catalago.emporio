@@ -4,25 +4,24 @@ export default {
   theme: {
     extend: {
       colors: {
-        rose: {
-          50: '#fff1f2',
-          100: '#ffe4e6',
-          200: '#fecdd3',
-          300: '#fda4af',
-          400: '#fb7185',
-          500: '#f43f5e',
-          600: '#e11d48',
-          700: '#be123c',
-          800: '#9f1239',
-          900: '#881337',
+        gold: {
+          DEFAULT: '#C8A951',
+          light: '#D4BC76',
+          dark: '#B69842',
+        },
+        brown: {
+          DEFAULT: '#3C2F2F',
+          light: '#4D3D3D',
+          dark: '#2B2222',
         },
       },
       fontFamily: {
-        sans: ['Raleway', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        sans: ['Cormorant Garamond', 'serif'],
+        display: ['Cormorant Garamond', 'serif'],
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+        'gold': '0 4px 20px rgba(200, 169, 81, 0.15)',
       },
     },
   },

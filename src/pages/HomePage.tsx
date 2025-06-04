@@ -14,11 +14,11 @@ const HomePage: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-rose-800 mb-4">
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-gold mb-4">
             Catálogos Disponíveis
           </h1>
           <motion.div
-            className="w-24 h-0.5 bg-rose-800/20 mx-auto"
+            className="w-24 h-0.5 bg-gold/20 mx-auto"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
@@ -32,25 +32,25 @@ const HomePage: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-white rounded-xl shadow-soft hover:shadow-lg transition-shadow duration-300"
+              className="bg-brown-light rounded-xl shadow-gold hover:shadow-lg transition-shadow duration-300"
             >
               <div className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center">
-                    <FileText className="w-6 h-6 text-rose-800" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center">
+                    <FileText className="w-6 h-6 text-gold" />
                   </div>
                   <div className="flex-grow">
-                    <h2 className="text-xl font-serif font-bold text-rose-800 mb-2">
+                    <h2 className="text-xl font-display font-bold text-gold mb-2">
                       {catalog.title}
                     </h2>
-                    <p className="text-gray-600 mb-4 line-clamp-2">
+                    <p className="text-gray-300 mb-4 line-clamp-2">
                       {catalog.description}
                     </p>
                     <motion.button
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => window.open(catalog.pdfUrl, '_blank')}
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-rose-800 text-white rounded-lg hover:bg-rose-700 transition-colors duration-300"
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-gold text-brown rounded-lg hover:bg-gold-light transition-colors duration-300"
                     >
                       <span>Visualizar</span>
                       <FileText className="w-4 h-4" />
@@ -65,5 +65,3 @@ const HomePage: React.FC = () => {
     </PageTransition>
   );
 };
-
-export default HomePage;

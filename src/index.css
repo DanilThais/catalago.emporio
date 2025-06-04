@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  @apply text-gray-800;
+  font-family: 'Cormorant Garamond', serif;
+  @apply bg-brown text-gray-100;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  @apply text-rose-800;
+  @apply text-gold font-display font-semibold;
 }

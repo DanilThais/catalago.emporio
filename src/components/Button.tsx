@@ -25,9 +25,9 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const variantClasses = {
-    primary: 'bg-rose-800 hover:bg-rose-700 text-white shadow-md',
-    secondary: 'bg-rose-200 hover:bg-rose-300 text-rose-800 shadow-sm',
-    outline: 'bg-transparent border-2 border-rose-800 text-rose-800 hover:bg-rose-50',
+    primary: 'bg-gold hover:bg-gold-light text-brown shadow-gold',
+    secondary: 'bg-brown-light hover:bg-brown text-gold shadow-md',
+    outline: 'bg-transparent border-2 border-gold text-gold hover:bg-gold/10',
   };
 
   return (
@@ -38,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({
         ${variantClasses[variant]} 
         ${fullWidth ? 'w-full' : ''} 
         rounded-lg font-medium transition-colors duration-300 
-        focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-opacity-50
+        focus:outline-none focus:ring-2 focus:ring-gold focus:ring-opacity-50
         ${className}
       `}
       whileHover={{ scale: 1.03 }}
@@ -48,5 +48,3 @@ const Button: React.FC<ButtonProps> = ({
     </motion.button>
   );
 };
-
-export default Button;

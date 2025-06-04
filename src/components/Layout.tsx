@@ -12,8 +12,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const showBackButton = location.pathname !== '/';
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-rose-50 to-white">
-      <header className="px-6 py-4 md:px-12 md:py-6 flex items-center justify-between">
+    <div className="min-h-screen bg-brown">
+      <header className="px-6 py-4 md:px-12 md:py-6 flex items-center justify-between bg-brown-dark">
         <div className="flex items-center gap-4">
           {showBackButton && (
             <Link 
@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   ? '/categorias' 
                   : '/'
               }
-              className="text-rose-800 hover:text-rose-600 transition-colors duration-300"
+              className="text-gold hover:text-gold-light transition-colors duration-300"
               aria-label="Voltar"
             >
               <ArrowLeftCircle size={28} />
@@ -39,11 +39,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="mt-auto px-6 py-8 md:px-12 text-center text-sm text-rose-800">
-        <p>© 2025 Perfumaria da Thais. Todos os direitos reservados.</p>
+      <footer className="mt-auto px-6 py-8 md:px-12 text-center text-sm text-gold/80">
+        <p>© 2025 Empório Dubai Perfumaria. Todos os direitos reservados.</p>
       </footer>
     </div>
   );
 };
-
-export default Layout;
