@@ -1,152 +1,66 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
-import Button from '../components/Button';
-
-const FloatingSparkle: React.FC<{ delay: number }> = ({ delay }) => (
-  <motion.span
-    className="absolute text-3xl text-rose-600/30"
-    initial={{ opacity: 0, y: 0 }}
-    animate={{ 
-      opacity: [0, 1, 0],
-      y: -20,
-      scale: [1, 1.2, 1]
-    }}
-    transition={{ 
-      duration: 2,
-      delay,
-      repeat: Infinity,
-      ease: "easeOut"
-    }}
-  >
-    ✨
-  </motion.span>
-);
+import { catalogs } from '../data/catalogs';
+import { FileText } from 'lucide-react';
 
 const HomePage: React.FC = () => {
-  const navigate = useNavigate();
-
-  const handleAccessCatalogs = () => {
-    navigate('/categorias');
-  };
-
   return (
     <PageTransition>
-      <div className="min-h-[80vh] flex flex-col items-center justify-center text-center px-4 py-12 relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <FloatingSparkle delay={0} />
-          <FloatingSparkle delay={1.5} />
-          <FloatingSparkle delay={3} />
-        </div>
-
+      <div className="min-h-screen py-12 px-4 md:px-8">
         <motion.div
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-16 relative"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
         >
-          <motion.div
-            animate={{ 
-              background: [
-                "linear-gradient(to right, #9f1239, #be123c, #9f1239)",
-                "linear-gradient(to right, #be123c, #9f1239, #be123c)",
-                "linear-gradient(to right, #9f1239, #be123c, #9f1239)"
-              ]
-            }}
-            transition={{ duration: 4, repeat: Infinity }}
-            className="absolute inset-0 opacity-5 blur-3xl rounded-full"
-          />
-          
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-8 relative">
-            <span className="absolute -left-8 md:-left-12 top-0 text-4xl md:text-5xl animate-pulse">✨</span>
-            <span className="bg-gradient-to-r from-rose-800 via-rose-700 to-rose-600 bg-clip-text text-transparent relative">
-              Empório Dubai Perfumaria
-              <motion.span
-                className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-rose-800/20 via-rose-600/40 to-rose-800/20"
-                animate={{ 
-                  scaleX: [0, 1, 0],
-                  opacity: [0, 1, 0]
-                }}
-                transition={{ 
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-              />
-            </span>
-            <span className="absolute -right-8 md:-right-12 top-0 text-4xl md:text-5xl animate-pulse delay-75">✨</span>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-rose-800 mb-4">
+            Catálogos Disponíveis
           </h1>
-          
-          <motion.p 
-            className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+          <motion.div
+            className="w-24 h-0.5 bg-rose-800/20 mx-auto"
+            initial={{ width: 0 }}
+            animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-          >
-            Seja bem-vindo(a) aos nossos{' '}
-            <span className="font-serif italic bg-gradient-to-r from-rose-800 to-rose-600 bg-clip-text text-transparent">
-              catálogos mágicos
-            </span>{' '}
-            — onde cada fragrância conta uma história única e desperta sentidos inesquecíveis.
-          </motion.p>
+          />
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          className="mb-20"
-        >
-          <Button 
-            size="lg" 
-            onClick={handleAccessCatalogs}
-            className="font-serif text-xl px-16 py-6 relative group hover:shadow-xl hover:shadow-rose-900/10 transition-shadow duration-300"
-          >
-            <motion.span 
-              className="absolute inset-0 bg-gradient-to-r from-rose-800 via-rose-700 to-rose-800 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            />
-            <span className="relative z-10">Explorar Catálogos</span>
-            <motion.span 
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-xl"
-              animate={{ 
-                x: [0, 5, 0],
-                opacity: [1, 0.5, 1],
-                scale: [1, 1.2, 1]
-              }}
-              transition={{ 
-                duration: 1.5, 
-                repeat: Infinity, 
-                ease: "easeInOut" 
-              }}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {catalogs.map((catalog, index) => (
+            <motion.div
+              key={catalog.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="bg-white rounded-xl shadow-soft hover:shadow-lg transition-shadow duration-300"
             >
-              ✨
-            </motion.span>
-          </Button>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 1 }}
-          className="relative max-w-5xl mx-auto group"
-        >
-          <motion.div 
-            className="absolute inset-0 bg-gradient-to-b from-rose-800/10 to-rose-800/20 rounded-2xl backdrop-blur-sm"
-            whileHover={{ opacity: 0.8 }}
-            transition={{ duration: 0.3 }}
-          />
-          <img 
-            src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg" 
-            alt="Coleção luxuosa de perfumes em ambiente sofisticado" 
-            className="w-full h-auto rounded-2xl shadow-2xl shadow-rose-900/10 transition-transform duration-500 group-hover:scale-[1.01]"
-          />
-          <motion.div 
-            className="absolute inset-0 rounded-2xl ring-1 ring-rose-800/20"
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.3 }}
-          />
-        </motion.div>
+              <div className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center">
+                    <FileText className="w-6 h-6 text-rose-800" />
+                  </div>
+                  <div className="flex-grow">
+                    <h2 className="text-xl font-serif font-bold text-rose-800 mb-2">
+                      {catalog.title}
+                    </h2>
+                    <p className="text-gray-600 mb-4 line-clamp-2">
+                      {catalog.description}
+                    </p>
+                    <motion.button
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                      onClick={() => window.open(catalog.pdfUrl, '_blank')}
+                      className="inline-flex items-center gap-2 px-4 py-2 bg-rose-800 text-white rounded-lg hover:bg-rose-700 transition-colors duration-300"
+                    >
+                      <span>Visualizar</span>
+                      <FileText className="w-4 h-4" />
+                    </motion.button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </PageTransition>
   );
