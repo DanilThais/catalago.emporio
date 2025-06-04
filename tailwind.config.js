@@ -5,14 +5,14 @@ export default {
     extend: {
       colors: {
         gold: {
-          DEFAULT: '#C8A951',
-          light: '#D4BC76',
-          dark: '#B69842',
+          DEFAULT: '#D4AF37',
+          light: '#E0C158',
+          dark: '#BF9B2F',
         },
         brown: {
-          DEFAULT: '#3C2F2F',
-          light: '#4D3D3D',
-          dark: '#2B2222',
+          DEFAULT: '#2C1810',
+          light: '#3D251C',
+          dark: '#1B0F0A',
         },
       },
       fontFamily: {
@@ -21,7 +21,7 @@ export default {
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
-        'gold': '0 4px 20px rgba(200, 169, 81, 0.15)',
+        'gold': '0 4px 20px rgba(212, 175, 55, 0.15)',
       },
     },
   },
