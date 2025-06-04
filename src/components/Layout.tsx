@@ -13,8 +13,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="min-h-screen bg-brown">
-      <header className="px-6 py-4 md:px-12 md:py-6 flex items-center justify-between bg-brown-dark">
-        <div className="flex items-center gap-4">
+      <header className="px-4 py-4 sm:px-6 md:px-12 md:py-6 flex items-center justify-between bg-brown-dark">
+        <div className="flex items-center gap-3 sm:gap-4">
           {showBackButton && (
             <Link 
               to={location.pathname.includes('/visualizar') 
@@ -26,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               className="text-gold hover:text-gold-light transition-colors duration-300"
               aria-label="Voltar"
             >
-              <ArrowLeftCircle size={28} />
+              <ArrowLeftCircle className="w-6 h-6 sm:w-7 sm:h-7" />
             </Link>
           )}
           <Link to="/" className="block">
@@ -35,15 +35,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </header>
       
-      <main className="px-6 py-4 md:px-12 md:py-6 max-w-7xl mx-auto">
+      <main className="px-4 py-4 sm:px-6 md:px-12 md:py-6 max-w-7xl mx-auto">
         {children}
       </main>
       
-      <footer className="mt-auto px-6 py-8 md:px-12 text-center text-sm text-gold/80">
+      <footer className="mt-auto px-4 py-6 sm:px-6 sm:py-8 md:px-12 text-center text-sm text-gold/80">
         <p>© 2025 Empório Dubai Perfumaria. Todos os direitos reservados.</p>
       </footer>
     </div>
   );
 };
 
-export default Layout
+export default Layout;
