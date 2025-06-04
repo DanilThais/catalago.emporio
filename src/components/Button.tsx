@@ -48,3 +48,5 @@ const Button: React.FC<ButtonProps> = ({
     </motion.button>
   );
 };
+
+export default Button
