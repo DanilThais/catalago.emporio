@@ -12,18 +12,19 @@ import Layout from './components/Layout';
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <AnimatePresence mode="wait">
+    <Router basename="/catalago-emporio">
+      <AnimatePresence>
+        <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/catalogs/:categoryId" element={<CatalogListPage />} />
-            <Route path="/visualizar/:catalogId" element={<PDFViewerPage />} />
+            <Route path="/catalogs/:catId" element={<CatalogListPage />} />
+            <Route path="/catalogs/:catId/pdf" element={<PDFViewerPage />} />
           </Routes>
-        </AnimatePresence>
-      </Layout>
+        </Layout>
+      </AnimatePresence>
     </Router>
   );
 }
 
 export default App;
+
