@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
-import { catalogs } from '../data/catalogs';
-import { FileText } from 'lucide-react';
+import { categories } from '../data/categories';
+import { Sparkles } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   return (
@@ -18,49 +19,97 @@ const HomePage: React.FC = () => {
             Catálogos Disponíveis
           </h1>
           <motion.div
-            className="w-24 h-0.5 bg-rose/20 mx-auto"
+            className="w-24 h-0.5 bg-rose/20 mx-auto mb-4"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
+          <p className="text-gray-600 text-lg">
+            Explore nossa coleção de perfumes e produtos de beleza
+          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 max-w-5xl mx-auto">
-          {catalogs.map((catalog, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+          {categories.map((category, index) => (
             <motion.div
-              key={catalog.id}
+              key={category.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-white rounded-xl shadow-rose hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+              className="group"
             >
-              <div className="p-4 sm:p-6">
-                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-12 sm:h-12 bg-rose/10 rounded-lg flex items-center justify-center">
-                    <FileText className="w-8 h-8 sm:w-6 sm:h-6 text-rose" />
-                  </div>
-                  <div className="flex-grow w-full sm:w-auto">
-                    <h2 className="text-2xl sm:text-xl font-display font-bold text-rose mb-2">
-                      {catalog.title}
-                    </h2>
-                    <p className="text-gray-700 mb-4 line-clamp-2 text-base sm:text-sm">
-                      {catalog.description}
-                    </p>
-                    <motion.button
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      onClick={() => window.open(catalog.pdfUrl, '_blank')}
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-4 sm:py-2 bg-rose text-white rounded-lg hover:bg-rose-light transition-colors duration-300 text-lg sm:text-base"
+              <Link to={`/catalogs/${category.id}`}>
+                <motion.div 
+                  className="overflow-hidden rounded-xl shadow-rose hover:shadow-lg transition-all duration-500 bg-white border border-gray-100"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
+                >
+                  <div className="relative h-48 sm:h-56 overflow-hidden">
+                    <motion.img
+                      src={category.image}
+                      alt={category.name}
+                      className="w-full h-full object-cover"
+                      whileHover={{ scale: 1.08 }}
+                      transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] }}
+                    />
+                    <motion.div 
+                      className="absolute inset-0"
+                      initial={{ 
+                        background: "linear-gradient(to top, rgba(233, 30, 99, 0.8), rgba(233, 30, 99, 0.3) 50%, rgba(233, 30, 99, 0) 100%)" 
+                      }}
+                      whileHover={{ 
+                        background: "linear-gradient(to top, rgba(233, 30, 99, 0.9), rgba(233, 30, 99, 0.5) 50%, rgba(233, 30, 99, 0.1) 100%)"
+                      }}
+                      transition={{ duration: 0.3 }}
+                    />
+                    <motion.div 
+                      className="absolute bottom-0 left-0 right-0 p-4 sm:p-6"
+                      initial={{ y: 0 }}
+                      whileHover={{ y: -5 }}
+                      transition={{ duration: 0.4, ease: "easeOut" }}
                     >
-                      <span>Visualizar Catálogo</span>
-                      <FileText className="w-5 h-5 sm:w-4 sm:h-4" />
-                    </motion.button>
+                      <motion.h2 
+                        className="text-xl sm:text-2xl font-display font-bold text-white mb-2 flex items-center gap-2"
+                        initial={{ opacity: 0.9 }}
+                        whileHover={{ opacity: 1, scale: 1.02 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <Sparkles className="w-5 h-5" />
+                        {category.name}
+                      </motion.h2>
+                      <motion.p 
+                        className="text-sm text-white/90 leading-relaxed"
+                        initial={{ opacity: 0.8 }}
+                        whileHover={{ opacity: 1 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        {category.description}
+                      </motion.p>
+                      <motion.div
+                        className="w-12 h-0.5 bg-white/30 mt-3"
+                        whileHover={{ width: "100%", backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+                        transition={{ duration: 0.4 }}
+                      />
+                    </motion.div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </Link>
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="text-center mt-12 p-6 bg-rose/5 rounded-xl border border-rose/10"
+        >
+          <p className="text-gray-600 text-sm">
+            <span className="font-semibold text-rose">Mais catálogos em breve!</span> 
+            <br />
+            Estamos constantemente expandindo nossa coleção com mais de 10 novos catálogos planejados.
+          </p>
+        </motion.div>
       </div>
     </PageTransition>
   );

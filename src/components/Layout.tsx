@@ -11,18 +11,25 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
   const showBackButton = location.pathname !== '/';
 
+  const getBackPath = () => {
+    if (location.pathname.includes('/visualizar')) {
+      // Se estamos visualizando um catálogo, voltar para a lista de catálogos da categoria
+      const categoryParam = new URLSearchParams(location.search).get('category');
+      return categoryParam ? `/catalogs/${categoryParam}` : '/';
+    } else if (location.pathname.includes('/catalogs/')) {
+      // Se estamos na lista de catálogos de uma categoria, voltar para a home
+      return '/';
+    }
+    return '/';
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <header className="px-4 py-4 sm:px-6 md:px-12 md:py-6 flex items-center justify-between bg-deep-brown-dark">
         <div className="flex items-center gap-3 sm:gap-4">
           {showBackButton && (
             <Link 
-              to={location.pathname.includes('/visualizar') 
-                ? `/categoria/${new URLSearchParams(location.search).get('category')}` 
-                : location.pathname.includes('/categoria/') 
-                  ? '/categorias' 
-                  : '/'
-              }
+              to={getBackPath()}
               className="text-rose hover:text-rose-light transition-colors duration-300"
               aria-label="Voltar"
             >
