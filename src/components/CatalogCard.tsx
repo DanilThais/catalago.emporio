@@ -18,7 +18,7 @@ const CatalogCard: React.FC<CatalogCardProps> = ({ catalog, index }) => {
       className="group w-full"
     >
       <Link to={`/visualizar/${catalog.id}?category=${catalog.categoryId}`}>
-        <div className="overflow-hidden rounded-lg bg-deep-brown-light shadow-rose hover:shadow-lg transition-shadow duration-300">
+        <div className="overflow-hidden rounded-lg bg-white shadow-rose hover:shadow-lg transition-shadow duration-300 border border-gray-100">
           <div className="relative h-40 sm:h-48 overflow-hidden">
             <img
               src={catalog.thumbnailUrl}
@@ -34,7 +34,7 @@ const CatalogCard: React.FC<CatalogCardProps> = ({ catalog, index }) => {
               </div>
               <h3 className="text-xl font-display font-bold text-rose">{catalog.title}</h3>
             </div>
-            <p className="text-gray-300 text-sm mb-4">{catalog.description}</p>
+            <p className="text-gray-700 text-sm mb-4">{catalog.description}</p>
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

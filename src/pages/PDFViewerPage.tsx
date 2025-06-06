@@ -32,7 +32,7 @@ const PDFViewerPage: React.FC = () => {
               <h1 className="text-2xl sm:text-3xl font-display font-bold text-rose mb-2">
                 {catalog.title}
               </h1>
-              <p className="text-gray-300">
+              <p className="text-gray-700">
                 {catalog.description}
               </p>
             </div>
@@ -48,7 +48,7 @@ const PDFViewerPage: React.FC = () => {
           </div>
           
           <div className="rounded-lg overflow-hidden shadow-rose border border-rose/10">
-            <div className="bg-deep-brown-dark text-rose py-3 px-4 flex items-center gap-2">
+            <div className="bg-rose-dark text-white py-3 px-4 flex items-center gap-2">
               <FileText className="w-5 h-5" />
               <span className="font-medium">Visualizando Catálogo</span>
             </div>

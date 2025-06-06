@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const showBackButton = location.pathname !== '/';
 
   return (
-    <div className="min-h-screen bg-deep-brown-light">
+    <div className="min-h-screen bg-white">
       <header className="px-4 py-4 sm:px-6 md:px-12 md:py-6 flex items-center justify-between bg-deep-brown-dark">
         <div className="flex items-center gap-3 sm:gap-4">
           {showBackButton && (

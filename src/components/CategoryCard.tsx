@@ -55,7 +55,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
                 {category.name}
               </motion.h3>
               <motion.p 
-                className="text-sm text-gray-300 leading-relaxed"
+                className="text-sm text-gray-700 leading-relaxed"
                 initial={{ opacity: 0.8 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.2 }}

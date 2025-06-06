@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="bg-deep-brown-light rounded-xl shadow-rose hover:shadow-lg transition-shadow duration-300"
+              className="bg-white rounded-xl shadow-rose hover:shadow-lg transition-shadow duration-300 border border-gray-100"
             >
               <div className="p-4 sm:p-6">
                 <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
@@ -43,7 +43,7 @@ const HomePage: React.FC = () => {
                     <h2 className="text-2xl sm:text-xl font-display font-bold text-rose mb-2">
                       {catalog.title}
                     </h2>
-                    <p className="text-gray-300 mb-4 line-clamp-2 text-base sm:text-sm">
+                    <p className="text-gray-700 mb-4 line-clamp-2 text-base sm:text-sm">
                       {catalog.description}
                     </p>
                     <motion.button

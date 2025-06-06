@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  @apply bg-deep-brown-light text-gray-100;
+  @apply bg-white text-gray-800;
 }
 
 h1, h2, h3, h4, h5, h6 {

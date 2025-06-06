@@ -32,7 +32,7 @@ const CatalogListPage: React.FC = () => {
         <h1 className="text-3xl md:text-4xl font-serif font-bold text-rose mb-2 text-center">
           {category.name}
         </h1>
-        <p className="text-center text-gray-300 mb-8">
+        <p className="text-center text-gray-700 mb-8">
           {category.description}
         </p>
         
@@ -48,7 +48,7 @@ const CatalogListPage: React.FC = () => {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-gray-700">
               Nenhum catálogo disponível para esta categoria no momento.
             </p>
           </div>
