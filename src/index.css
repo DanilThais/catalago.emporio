@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -10,9 +10,9 @@ html {
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  @apply bg-deep-brown text-gray-100;
+  @apply bg-amber-900 text-gray-100;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-rose font-display font-semibold;
+  @apply text-rose-400 font-semibold;
 }
