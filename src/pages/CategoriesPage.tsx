@@ -14,11 +14,11 @@ const CategoriesPage: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gold mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-rose mb-4">
             Nossos Catálogos
           </h1>
           <motion.div
-            className="w-24 h-0.5 bg-gold/20 mx-auto"
+            className="w-24 h-0.5 bg-rose/20 mx-auto"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}

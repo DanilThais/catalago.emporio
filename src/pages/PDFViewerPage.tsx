@@ -17,7 +17,7 @@ const PDFViewerPage: React.FC = () => {
     return (
       <PageTransition>
         <div className="py-12 text-center">
-          <h2 className="text-2xl font-bold text-gold">Catálogo não encontrado</h2>
+          <h2 className="text-2xl font-bold text-rose">Catálogo não encontrado</h2>
         </div>
       </PageTransition>
     );
@@ -29,7 +29,7 @@ const PDFViewerPage: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
             <div>
-              <h1 className="text-2xl sm:text-3xl font-display font-bold text-gold mb-2">
+              <h1 className="text-2xl sm:text-3xl font-display font-bold text-rose mb-2">
                 {catalog.title}
               </h1>
               <p className="text-gray-300">
@@ -47,8 +47,8 @@ const PDFViewerPage: React.FC = () => {
             </Button>
           </div>
           
-          <div className="rounded-lg overflow-hidden shadow-gold border border-gold/10">
-            <div className="bg-brown-dark text-gold py-3 px-4 flex items-center gap-2">
+          <div className="rounded-lg overflow-hidden shadow-rose border border-rose/10">
+            <div className="bg-deep-brown-dark text-rose py-3 px-4 flex items-center gap-2">
               <FileText className="w-5 h-5" />
               <span className="font-medium">Visualizando Catálogo</span>
             </div>

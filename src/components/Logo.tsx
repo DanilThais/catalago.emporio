@@ -21,14 +21,14 @@ const Logo: React.FC = () => {
           ease: "easeInOut" 
         }}
       >
-        <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 text-gold" />
+        <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 text-rose" />
       </motion.div>
       <div className="relative">
-        <div className="font-display text-xl sm:text-2xl font-bold text-gold">
+        <div className="font-display text-xl sm:text-2xl font-bold text-rose">
           Empório Dubai
         </div>
         <motion.div 
-          className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-gold to-gold-light"
+          className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-rose to-rose-light"
           whileHover={{ width: "100%" }}
           transition={{ duration: 0.3 }}
         />

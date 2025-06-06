@@ -20,7 +20,7 @@ const CatalogListPage: React.FC = () => {
     return (
       <PageTransition>
         <div className="py-12 text-center">
-          <h2 className="text-2xl font-bold text-rose-800">Categoria não encontrada</h2>
+          <h2 className="text-2xl font-bold text-rose">Categoria não encontrada</h2>
         </div>
       </PageTransition>
     );
@@ -29,10 +29,10 @@ const CatalogListPage: React.FC = () => {
   return (
     <PageTransition>
       <div className="py-8">
-        <h1 className="text-3xl md:text-4xl font-serif font-bold text-rose-800 mb-2 text-center">
+        <h1 className="text-3xl md:text-4xl font-serif font-bold text-rose mb-2 text-center">
           {category.name}
         </h1>
-        <p className="text-center text-gray-600 mb-8">
+        <p className="text-center text-gray-300 mb-8">
           {category.description}
         </p>
         
@@ -48,7 +48,7 @@ const CatalogListPage: React.FC = () => {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-300">
               Nenhum catálogo disponível para esta categoria no momento.
             </p>
           </div>

@@ -4,15 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        gold: {
-          DEFAULT: '#D4AF37',
-          light: '#E0C158',
-          dark: '#BF9B2F',
+        rose: {
+          DEFAULT: '#E91E63',
+          light: '#F06292',
+          dark: '#C2185B',
         },
-        brown: {
-          DEFAULT: '#2C1810',
-          light: '#3D251C',
-          dark: '#1B0F0A',
+        'deep-brown': {
+          DEFAULT: '#3E2723',
+          light: '#5D4037',
+          dark: '#2E1A17',
         },
       },
       fontFamily: {
@@ -21,7 +21,7 @@ export default {
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
-        'gold': '0 4px 20px rgba(212, 175, 55, 0.15)',
+        'rose': '0 4px 20px rgba(233, 30, 99, 0.15)',
       },
     },
   },
