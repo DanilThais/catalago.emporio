@@ -15,6 +15,7 @@ export default defineConfig({
         theme_color: '#9f1239',
         background_color: '#ffffff',
         display: 'standalone',
+        start_url: '/catalago.emporio/',
         icons: [
           {
             src: 'pwa-64x64.png',
@@ -41,7 +42,7 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,pdf}'],
+        globPatterns: ['**/*.{js,css,html,ico,png,svg,pdf,webmanifest}'],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
