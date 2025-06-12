@@ -1,0 +1,1 @@
+console.log("Projeto catalogo-final inicializado");

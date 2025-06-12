@@ -12,13 +12,13 @@ import Layout from './components/Layout';
 
 function App() {
   return (
-    <Router basename="/catalago-emporio">
+    <Router basename="/catalago.emporio/">
       <AnimatePresence>
         <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/catalogs/:catId" element={<CatalogListPage />} />
-            <Route path="/catalogs/:catId/pdf" element={<PDFViewerPage />} />
+            <Route path="/catalogs/:categoryId" element={<CatalogListPage />} />
+            <Route path="/visualizar/:catalogId" element={<PDFViewerPage />} />
           </Routes>
         </Layout>
       </AnimatePresence>
@@ -27,4 +27,3 @@ function App() {
 }
 
 export default App;
-

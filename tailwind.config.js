@@ -14,6 +14,8 @@ export default {
           light: '#5D4037',
           dark: '#2E1A17',
         },
+        'brown': '#8B4513', // Cor marrom personalizada
+        'gold': '#FFD700',  // Cor ouro personalizada
       },
       fontFamily: {
         sans: ['Cormorant Garamond', 'serif'],
