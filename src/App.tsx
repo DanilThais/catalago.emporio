@@ -11,8 +11,11 @@ import PDFViewerPage from './pages/PDFViewerPage';
 import Layout from './components/Layout';
 
 function App() {
+  // Use different basename for development and production
+  const basename = import.meta.env.MODE === 'development' ? '/' : '/catalago.emporio/';
+
   return (
-    <Router basename="/catalago.emporio/">
+    <Router basename={basename}>
       <AnimatePresence>
         <Layout>
           <Routes>
