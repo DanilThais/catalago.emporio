@@ -18,7 +18,11 @@ const CatalogCard: React.FC<CatalogCardProps> = ({ catalog, index }) => {
       className="group w-full"
     >
       <Link to={`/visualizar/${catalog.id}?category=${catalog.categoryId}`}>
-        <div className="overflow-hidden rounded-lg bg-white shadow-rose hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+        <motion.div 
+          className="overflow-hidden rounded-lg bg-white shadow-rose hover:shadow-lg transition-all duration-300 border border-gray-100 cursor-pointer"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+        >
           <div className="relative h-40 sm:h-48 overflow-hidden">
             <img
               src={catalog.thumbnailUrl}
@@ -35,16 +39,12 @@ const CatalogCard: React.FC<CatalogCardProps> = ({ catalog, index }) => {
               <h3 className="text-xl font-display font-bold text-rose">{catalog.title}</h3>
             </div>
             <p className="text-gray-700 text-sm mb-4">{catalog.description}</p>
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full sm:w-auto px-4 py-2 bg-rose text-white rounded-lg hover:bg-rose-light transition-colors duration-300 flex items-center justify-center gap-2"
-            >
+            <div className="w-full sm:w-auto px-4 py-2 bg-rose text-white rounded-lg hover:bg-rose-light transition-colors duration-300 flex items-center justify-center gap-2">
               <span>Visualizar</span>
               <FileText className="w-4 h-4" />
-            </motion.button>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </Link>
     </motion.div>
   );
