@@ -1,22 +1,40 @@
-import React, { useMemo, useEffect } from 'react';
+import React, { useMemo, useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import { catalogs } from '../data/catalogs';
 import Button from '../components/Button';
-import { FileText, ExternalLink, ArrowLeft } from 'lucide-react';
+import { FileText, ExternalLink, ArrowLeft, AlertCircle, CheckCircle } from 'lucide-react';
 
 const PDFViewerPage: React.FC = () => {
   const { catalogId } = useParams<{ catalogId: string }>();
   const navigate = useNavigate();
+  const [pdfOpened, setPdfOpened] = useState(false);
+  const [showInstructions, setShowInstructions] = useState(false);
   
   const catalog = useMemo(() => {
     return catalogs.find(cat => cat.id === catalogId);
   }, [catalogId]);
 
+  const openPDF = () => {
+    if (catalog) {
+      const newWindow = window.open(catalog.pdfUrl, '_blank');
+      if (newWindow) {
+        setPdfOpened(true);
+        setShowInstructions(false);
+      } else {
+        setShowInstructions(true);
+      }
+    }
+  };
+
   useEffect(() => {
     if (catalog) {
-      // Abrir o PDF automaticamente em uma nova aba
-      window.open(catalog.pdfUrl, '_blank');
+      // Tentar abrir o PDF automaticamente após um pequeno delay
+      const timer = setTimeout(() => {
+        openPDF();
+      }, 500);
+      
+      return () => clearTimeout(timer);
     }
   }, [catalog]);
 
@@ -57,22 +75,38 @@ const PDFViewerPage: React.FC = () => {
               {catalog.description}
             </p>
             
-            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
-              <p className="text-green-800 text-sm">
-                <span className="font-semibold">✓ Catálogo aberto!</span>
-                <br />
-                O catálogo foi aberto em uma nova aba do seu navegador.
-              </p>
-            </div>
+            {pdfOpened && (
+              <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                <div className="flex items-center justify-center gap-2 text-green-800">
+                  <CheckCircle className="w-5 h-5" />
+                  <span className="font-semibold">Catálogo aberto com sucesso!</span>
+                </div>
+                <p className="text-green-700 text-sm mt-2">
+                  O catálogo foi aberto em uma nova aba do seu navegador.
+                </p>
+              </div>
+            )}
+            
+            {showInstructions && (
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6">
+                <div className="flex items-center justify-center gap-2 text-amber-800 mb-2">
+                  <AlertCircle className="w-5 h-5" />
+                  <span className="font-semibold">Pop-ups bloqueados</span>
+                </div>
+                <p className="text-amber-700 text-sm">
+                  Seu navegador bloqueou a abertura automática. Clique no botão abaixo para abrir o catálogo.
+                </p>
+              </div>
+            )}
             
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
-                onClick={() => window.open(catalog.pdfUrl, '_blank')}
+                onClick={openPDF}
                 variant="primary"
                 className="w-full sm:w-auto"
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
-                Abrir novamente
+                {pdfOpened ? 'Abrir novamente' : 'Abrir catálogo'}
               </Button>
               
               <Button
@@ -86,10 +120,17 @@ const PDFViewerPage: React.FC = () => {
             </div>
             
             <div className="mt-6 pt-6 border-t border-gray-100">
-              <p className="text-xs text-gray-500">
-                Se o catálogo não abriu automaticamente, verifique se o bloqueador de pop-ups está desabilitado 
-                ou clique em "Abrir novamente" acima.
-              </p>
+              <div className="text-left space-y-3">
+                <h3 className="font-semibold text-gray-800 text-sm">
+                  💡 Dicas para melhor experiência:
+                </h3>
+                <ul className="text-xs text-gray-600 space-y-1">
+                  <li>• Desabilite o bloqueador de pop-ups para este site</li>
+                  <li>• Certifique-se de que o JavaScript está habilitado</li>
+                  <li>• Use um navegador atualizado (Chrome, Firefox, Safari, Edge)</li>
+                  <li>• Se o PDF não carregar, tente atualizar a página</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
