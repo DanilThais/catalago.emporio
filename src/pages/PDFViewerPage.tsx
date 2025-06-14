@@ -29,12 +29,8 @@ const PDFViewerPage: React.FC = () => {
 
   useEffect(() => {
     if (catalog) {
-      // Tentar abrir o PDF automaticamente após um pequeno delay
-      const timer = setTimeout(() => {
-        openPDF();
-      }, 500);
-      
-      return () => clearTimeout(timer);
+      // Abrir o PDF imediatamente sem setTimeout
+      openPDF();
     }
   }, [catalog]);
 
