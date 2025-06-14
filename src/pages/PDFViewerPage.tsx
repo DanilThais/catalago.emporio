@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import { catalogs } from '../data/catalogs';
@@ -26,13 +26,6 @@ const PDFViewerPage: React.FC = () => {
       }
     }
   };
-
-  useEffect(() => {
-    if (catalog) {
-      // Abrir o PDF imediatamente sem setTimeout
-      openPDF();
-    }
-  }, [catalog]);
 
   if (!catalog) {
     return (
