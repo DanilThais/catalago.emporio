@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
-export default defineConfig(({ command }) => ({
+export default defineConfig({
   plugins: [
     react(),
     VitePWA({
@@ -12,7 +12,7 @@ export default defineConfig(({ command }) => ({
         name: 'Empório Dubai Perfumaria - Catálogos',
         short_name: 'Empório Dubai',
         description: 'Catálogos digitais da Empório Dubai Perfumaria',
-        theme_color: '#9f1239',
+        theme_color: '#E91E63',
         background_color: '#ffffff',
         display: 'standalone',
         start_url: '/catalago.emporio/',
@@ -121,5 +121,5 @@ export default defineConfig(({ command }) => ({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: command === 'build' ? '/catalago.emporio/' : '/',
-}));
+  base: '/catalago.emporio/',
+});
