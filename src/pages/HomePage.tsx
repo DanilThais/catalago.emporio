@@ -2,12 +2,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
+import SEOHead from '../components/SEOHead';
 import { categories } from '../data/categories';
 import { Sparkles } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   return (
     <PageTransition>
+      <SEOHead 
+        title="Empório Dubai Perfumaria - Catálogos Digitais"
+        description="Explore nossa coleção exclusiva de perfumes Lattafa, Maison Alhambra e muito mais. Catálogos digitais da Empório Dubai Perfumaria."
+      />
+      
       <div className="min-h-screen py-8 px-4 sm:py-12 sm:px-6 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -51,6 +57,7 @@ const HomePage: React.FC = () => {
                       className="w-full h-full object-cover"
                       whileHover={{ scale: 1.08 }}
                       transition={{ duration: 0.8, ease: [0.19, 1, 0.22, 1] }}
+                      loading="lazy"
                     />
                     <motion.div 
                       className="absolute inset-0"

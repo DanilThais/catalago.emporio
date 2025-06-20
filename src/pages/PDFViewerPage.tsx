@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
+import SEOHead from '../components/SEOHead';
 import { catalogs } from '../data/catalogs';
 import Button from '../components/Button';
 import { FileText, ExternalLink, ArrowLeft, AlertCircle, CheckCircle } from 'lucide-react';
@@ -17,7 +18,7 @@ const PDFViewerPage: React.FC = () => {
 
   const openPDF = () => {
     if (catalog) {
-      const newWindow = window.open(catalog.pdfUrl, '_blank');
+      const newWindow = window.open(catalog.pdfUrl, '_blank', 'noopener,noreferrer');
       if (newWindow) {
         setPdfOpened(true);
         setShowInstructions(false);
@@ -30,6 +31,7 @@ const PDFViewerPage: React.FC = () => {
   if (!catalog) {
     return (
       <PageTransition>
+        <SEOHead title="Catálogo não encontrado - Empório Dubai" />
         <div className="py-12 text-center">
           <div className="max-w-md mx-auto">
             <FileText className="w-16 h-16 text-rose/50 mx-auto mb-4" />
@@ -49,6 +51,12 @@ const PDFViewerPage: React.FC = () => {
 
   return (
     <PageTransition>
+      <SEOHead 
+        title={`${catalog.title} - Empório Dubai`}
+        description={catalog.description}
+        keywords={`${catalog.title}, catálogo, perfumes, PDF`}
+      />
+      
       <div className="py-8">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-white rounded-xl shadow-rose border border-rose/10 p-8">

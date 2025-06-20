@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import PageTransition from '../components/PageTransition';
 import CatalogCard from '../components/CatalogCard';
+import SEOHead from '../components/SEOHead';
 import { categories } from '../data/categories';
 import { catalogs } from '../data/catalogs';
 import { motion } from 'framer-motion';
@@ -21,6 +22,7 @@ const CatalogListPage: React.FC = () => {
   if (!category) {
     return (
       <PageTransition>
+        <SEOHead title="Categoria não encontrada - Empório Dubai" />
         <div className="py-12 text-center">
           <h2 className="text-2xl font-bold text-rose">Categoria não encontrada</h2>
         </div>
@@ -30,6 +32,12 @@ const CatalogListPage: React.FC = () => {
 
   return (
     <PageTransition>
+      <SEOHead 
+        title={`${category.name} - Catálogos Empório Dubai`}
+        description={`${category.description}. Explore nossa coleção de perfumes ${category.name}.`}
+        keywords={`${category.name}, perfumes, fragrâncias, catálogo`}
+      />
+      
       <div className="py-8">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
