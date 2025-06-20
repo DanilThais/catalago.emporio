@@ -12,6 +12,8 @@ import Layout from './components/Layout';
 import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {
+  // Este é um comentário para disparar o deploy
+
   // Use different basename for development and production
   const basename = import.meta.env.MODE === 'development' ? '/' : '/catalago.emporio/';
 
