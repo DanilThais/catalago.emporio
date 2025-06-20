@@ -15,27 +15,27 @@ export default defineConfig({
         theme_color: '#E91E63',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/catalago.emporio/',
-        scope: '/catalago.emporio/',
+        start_url: '/',
+        scope: '/',
         icons: [
           {
-            src: '/catalago.emporio/pwa-64x64.png',
+            src: '/pwa-64x64.png',
             sizes: '64x64',
             type: 'image/png'
           },
           {
-            src: '/catalago.emporio/pwa-192x192.png',
+            src: '/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/catalago.emporio/pwa-192x192.png',
+            src: '/pwa-192x192.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any'
           },
           {
-            src: '/catalago.emporio/pwa-192x192.png',
+            src: '/pwa-192x192.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
@@ -94,7 +94,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/catalago.emporio/',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
