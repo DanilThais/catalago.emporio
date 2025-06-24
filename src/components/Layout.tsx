@@ -24,13 +24,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-gold">
       <header className="px-4 py-4 sm:px-6 md:px-12 md:py-6 flex items-center justify-between bg-charcoal-dark border-b border-gold/10">
         <div className="flex items-center gap-3 sm:gap-4">
           {showBackButton && (
             <Link 
               to={getBackPath()}
-              className="text-cream hover:text-gold transition-colors duration-300"
+              className="text-charcoal hover:text-gold transition-colors duration-300"
               aria-label="Voltar"
             >
               <ArrowLeftCircle className="w-6 h-6 sm:w-7 sm:h-7" />

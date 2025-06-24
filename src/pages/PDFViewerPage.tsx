@@ -34,8 +34,8 @@ const PDFViewerPage: React.FC = () => {
         <SEOHead title="Catálogo não encontrado - Empório Dubai" />
         <div className="py-12 text-center">
           <div className="max-w-md mx-auto">
-            <FileText className="w-16 h-16 text-gold/50 mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-gold mb-4">Catálogo não encontrado</h2>
+            <FileText className="w-16 h-16 text-charcoal/50 mx-auto mb-4" />
+            <h2 className="text-2xl font-bold text-charcoal mb-4">Catálogo não encontrado</h2>
             <p className="text-charcoal/80 mb-6">
               O catálogo solicitado não foi encontrado em nossa base de dados.
             </p>
@@ -60,11 +60,11 @@ const PDFViewerPage: React.FC = () => {
       <div className="py-8">
         <div className="max-w-2xl mx-auto text-center">
           <div className="bg-white rounded-xl shadow-md border border-gray-200 p-8">
-            <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FileText className="w-8 h-8 text-gold" />
+            <div className="w-16 h-16 bg-charcoal/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <FileText className="w-8 h-8 text-charcoal" />
             </div>
             
-            <h1 className="text-2xl sm:text-3xl font-display font-bold text-gold mb-4">
+            <h1 className="text-2xl sm:text-3xl font-display font-bold text-charcoal mb-4">
               {catalog.title}
             </h1>
             
@@ -121,7 +121,7 @@ const PDFViewerPage: React.FC = () => {
                 <h3 className="font-semibold text-charcoal text-sm">
                   💡 Dicas para melhor experiência:
                 </h3>
-                <ul className="text-xs text-gray-700 space-y-1">
+                <ul className="text-xs text-charcoal/70 space-y-1">
                   <li>• Desabilite o bloqueador de pop-ups para este site</li>
                   <li>• Certifique-se de que o JavaScript está habilitado</li>
                   <li>• Use um navegador atualizado (Chrome, Firefox, Safari, Edge)</li>

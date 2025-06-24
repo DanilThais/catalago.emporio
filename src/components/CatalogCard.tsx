@@ -34,13 +34,13 @@ const CatalogCard: React.FC<CatalogCardProps> = ({ catalog, index }) => {
           </div>
           <div className="p-4 sm:p-6">
             <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 bg-gold/20 rounded-lg flex items-center justify-center">
-                <FileText className="w-5 h-5 text-gold" />
+              <div className="w-8 h-8 bg-charcoal/10 rounded-lg flex items-center justify-center">
+                <FileText className="w-5 h-5 text-charcoal" />
               </div>
-              <h3 className="text-xl font-display font-bold text-gold">{catalog.title}</h3>
+              <h3 className="text-xl font-display font-bold text-charcoal">{catalog.title}</h3>
             </div>
             <p className="text-charcoal/80 text-sm mb-4">{catalog.description}</p>
-            <div className="w-full sm:w-auto px-4 py-2 bg-gold text-charcoal rounded-lg hover:bg-gold-light transition-colors duration-300 flex items-center justify-center gap-2 font-semibold">
+            <div className="w-full sm:w-auto px-4 py-2 bg-charcoal text-gold rounded-lg hover:bg-charcoal-light transition-colors duration-300 flex items-center justify-center gap-2 font-semibold">
               <span>Visualizar</span>
               <FileText className="w-4 h-4" />
             </div>

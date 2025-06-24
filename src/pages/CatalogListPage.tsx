@@ -24,7 +24,7 @@ const CatalogListPage: React.FC = () => {
       <PageTransition>
         <SEOHead title="Categoria não encontrada - Empório Dubai" />
         <div className="py-12 text-center">
-          <h2 className="text-2xl font-bold text-gold">Categoria não encontrada</h2>
+          <h2 className="text-2xl font-bold text-charcoal">Categoria não encontrada</h2>
         </div>
       </PageTransition>
     );
@@ -46,8 +46,8 @@ const CatalogListPage: React.FC = () => {
           className="text-center mb-8 sm:mb-12"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Sparkles className="w-8 h-8 text-gold" />
-            <h1 className="text-3xl md:text-4xl font-display font-bold text-gold">
+            <Sparkles className="w-8 h-8 text-charcoal" />
+            <h1 className="text-3xl md:text-4xl font-display font-bold text-charcoal">
               {category.name}
             </h1>
           </div>
@@ -80,7 +80,7 @@ const CatalogListPage: React.FC = () => {
             className="text-center py-12"
           >
             <div className="bg-charcoal/5 rounded-xl p-8 border border-charcoal/10 max-w-md mx-auto">
-              <Sparkles className="w-12 h-12 text-gold/70 mx-auto mb-4" />
+              <Sparkles className="w-12 h-12 text-charcoal/70 mx-auto mb-4" />
               <p className="text-lg text-charcoal/90 mb-2">
                 Catálogos em preparação
               </p>
@@ -98,7 +98,7 @@ const CatalogListPage: React.FC = () => {
           className="text-center mt-12 p-6 bg-charcoal/5 rounded-xl border border-charcoal/10"
         >
           <p className="text-charcoal/80 text-sm">
-            <span className="font-semibold text-gold">Expandindo constantemente!</span> 
+            <span className="font-semibold text-charcoal">Expandindo constantemente!</span> 
             <br />
             Mais catálogos de {category.name} e outras categorias serão adicionados regularmente.
           </p>

@@ -47,7 +47,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <motion.h3 
-                className="text-xl sm:text-2xl font-display font-bold text-gold mb-2"
+                className="text-xl sm:text-2xl font-display font-bold text-charcoal mb-2"
                 initial={{ opacity: 0.9 }}
                 whileHover={{ opacity: 1, scale: 1.02 }}
                 transition={{ duration: 0.2 }}
@@ -55,7 +55,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
                 {category.name}
               </motion.h3>
               <motion.p 
-                className="text-sm text-cream/90 leading-relaxed"
+                className="text-sm text-charcoal/90 leading-relaxed"
                 initial={{ opacity: 0.8 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.2 }}
@@ -63,8 +63,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
                 {category.description}
               </motion.p>
               <motion.div
-                className="w-12 h-0.5 bg-gold/30 mt-3"
-                whileHover={{ width: "100%", backgroundColor: "rgba(255, 215, 0, 0.5)" }}
+                className="w-12 h-0.5 bg-charcoal/30 mt-3"
+                whileHover={{ width: "100%", backgroundColor: "rgba(55, 55, 55, 0.5)" }}
                 transition={{ duration: 0.4 }}
               />
             </motion.div>

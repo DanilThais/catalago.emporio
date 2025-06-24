@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
-          <h3 className="text-2xl sm:text-3xl font-display font-bold text-gold mb-4">
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-charcoal mb-4">
             Catálogos Disponíveis
           </h3>
           <p className="text-charcoal/80 text-lg">
@@ -118,7 +118,7 @@ const HomePage: React.FC = () => {
           className="text-center mt-12 p-6 bg-charcoal/5 rounded-xl border border-charcoal/10"
         >
           <p className="text-charcoal/80 text-sm">
-            <span className="font-semibold text-gold">Mais catálogos em breve!</span> 
+            <span className="font-semibold text-charcoal">Mais catálogos em breve!</span> 
             <br />
             Estamos constantemente expandindo nossa coleção com mais de 10 novos catálogos planejados.
           </p>
