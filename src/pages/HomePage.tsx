@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
-          <p className="text-brown-dark/80 text-lg">
+          <p className="text-brown-dark/80 text-xl font-script">
             Explore nossa coleção de perfumes e produtos de beleza
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
                         {category.name}
                       </motion.h2>
                       <motion.p 
-                        className="text-sm text-golden-cream/90 leading-relaxed"
+                        className="text-sm text-golden-cream/90 leading-relaxed font-script text-base"
                         initial={{ opacity: 0.8 }}
                         whileHover={{ opacity: 1 }}
                         transition={{ duration: 0.2 }}
@@ -114,7 +114,7 @@ const HomePage: React.FC = () => {
           <p className="text-brown-dark/80 text-sm">
             <span className="font-semibold text-brown-dark">Mais catálogos em breve!</span> 
             <br />
-            Estamos constantemente expandindo nossa coleção com mais de 10 novos catálogos planejados.
+            <span className="font-script text-base">Estamos constantemente expandindo nossa coleção com mais de 10 novos catálogos planejados.</span>
           </p>
         </motion.div>
       </div>

@@ -68,7 +68,7 @@ const PDFViewerPage: React.FC = () => {
               {catalog.title}
             </h1>
             
-            <p className="text-brown-dark/80 mb-6 leading-relaxed">
+            <p className="text-brown-dark/80 mb-6 leading-relaxed font-script text-lg">
               {catalog.description}
             </p>
             
@@ -78,7 +78,7 @@ const PDFViewerPage: React.FC = () => {
                   <CheckCircle className="w-5 h-5" />
                   <span className="font-semibold">Catálogo aberto com sucesso!</span>
                 </div>
-                <p className="text-green-700 text-sm mt-2">
+                <p className="text-green-700 text-sm mt-2 font-script">
                   O catálogo foi aberto em uma nova aba do seu navegador.
                 </p>
               </div>
@@ -90,7 +90,7 @@ const PDFViewerPage: React.FC = () => {
                   <AlertCircle className="w-5 h-5" />
                   <span className="font-semibold">Pop-ups bloqueados</span>
                 </div>
-                <p className="text-amber-700 text-sm">
+                <p className="text-amber-700 text-sm font-script">
                   Seu navegador bloqueou a abertura automática. Clique no botão abaixo para abrir o catálogo.
                 </p>
               </div>

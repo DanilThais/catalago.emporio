@@ -30,6 +30,7 @@ export default {
       fontFamily: {
         sans: ['Cormorant Garamond', 'serif'],
         display: ['Cormorant Garamond', 'serif'],
+        script: ['Alex Brush', 'cursive'],
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
