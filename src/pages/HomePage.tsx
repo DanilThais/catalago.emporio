@@ -21,15 +21,21 @@ const HomePage: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gold mb-4">
-            Catálogos Disponíveis
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-script text-charcoal mb-4">
+            Perfumes que contam
           </h1>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-script text-charcoal mb-6">
+            Histórias de amor.
+          </h2>
           <motion.div
-            className="w-24 h-0.5 bg-charcoal/20 mx-auto mb-4"
+            className="w-24 h-0.5 bg-charcoal/20 mx-auto mb-6"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
+          <h3 className="text-2xl sm:text-3xl font-display font-bold text-gold mb-4">
+            Catálogos Disponíveis
+          </h3>
           <p className="text-charcoal/80 text-lg">
             Explore nossa coleção de perfumes e produtos de beleza
           </p>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,4 +15,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   @apply text-gold font-display font-semibold;
+}
+
+.script-text {
+  font-family: 'Great Vibes', cursive;
 }

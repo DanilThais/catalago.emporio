@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Nova paleta de cores principal
+        // Nova paleta de cores principal baseada na imagem
         cream: {
           DEFAULT: '#f2deaf',
           light: '#f5e5c4',
@@ -39,9 +39,12 @@ export default {
       fontFamily: {
         sans: ['Cormorant Garamond', 'serif'],
         display: ['Cormorant Garamond', 'serif'],
+        script: ['Great Vibes', 'cursive'],
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+        'cream': '0 4px 20px rgba(242, 222, 175, 0.15)',
+        'gold': '0 4px 20px rgba(255, 215, 0, 0.15)',
       },
     },
   },
