@@ -28,7 +28,7 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
           rotate: { duration: 2, repeat: Infinity, ease: "linear" },
           scale: { duration: 1, repeat: Infinity, ease: "easeInOut" }
         }}
-        className={`${sizeClasses[size]} text-rose mb-4`}
+        className={`${sizeClasses[size]} text-gold mb-4`}
       >
         <Sparkles className="w-full h-full" />
       </motion.div>
@@ -36,7 +36,7 @@ const LoadingSpinner: React.FC<LoadingSpinnerProps> = ({
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="text-gray-600 text-sm"
+        className="text-cream/80 text-sm"
       >
         {text}
       </motion.p>

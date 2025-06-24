@@ -18,7 +18,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
     >
       <Link to={`/categoria/${category.id}`}>
         <motion.div 
-          className="overflow-hidden rounded-lg shadow-rose hover:shadow-lg transition-all duration-500"
+          className="overflow-hidden rounded-lg shadow-cream hover:shadow-gold transition-all duration-500"
           whileHover={{ scale: 1.02 }}
           transition={{ type: "spring", stiffness: 300, damping: 25 }}
         >
@@ -33,10 +33,10 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
             <motion.div 
               className="absolute inset-0"
               initial={{ 
-                background: "linear-gradient(to top, rgba(62, 39, 35, 0.95), rgba(62, 39, 35, 0.3) 50%, rgba(62, 39, 35, 0) 100%)" 
+                background: "linear-gradient(to top, rgba(55, 55, 55, 0.95), rgba(55, 55, 55, 0.3) 50%, rgba(55, 55, 55, 0) 100%)" 
               }}
               whileHover={{ 
-                background: "linear-gradient(to top, rgba(62, 39, 35, 0.98), rgba(62, 39, 35, 0.5) 50%, rgba(62, 39, 35, 0.1) 100%)"
+                background: "linear-gradient(to top, rgba(55, 55, 55, 0.98), rgba(55, 55, 55, 0.5) 50%, rgba(55, 55, 55, 0.1) 100%)"
               }}
               transition={{ duration: 0.3 }}
             />
@@ -47,7 +47,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
               transition={{ duration: 0.4, ease: "easeOut" }}
             >
               <motion.h3 
-                className="text-xl sm:text-2xl font-display font-bold text-rose mb-2"
+                className="text-xl sm:text-2xl font-display font-bold text-gold mb-2"
                 initial={{ opacity: 0.9 }}
                 whileHover={{ opacity: 1, scale: 1.02 }}
                 transition={{ duration: 0.2 }}
@@ -55,7 +55,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
                 {category.name}
               </motion.h3>
               <motion.p 
-                className="text-sm text-gray-700 leading-relaxed"
+                className="text-sm text-cream/90 leading-relaxed"
                 initial={{ opacity: 0.8 }}
                 whileHover={{ opacity: 1 }}
                 transition={{ duration: 0.2 }}
@@ -63,8 +63,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ category, index }) => {
                 {category.description}
               </motion.p>
               <motion.div
-                className="w-12 h-0.5 bg-rose/30 mt-3"
-                whileHover={{ width: "100%", backgroundColor: "rgba(233, 30, 99, 0.5)" }}
+                className="w-12 h-0.5 bg-gold/30 mt-3"
+                whileHover={{ width: "100%", backgroundColor: "rgba(255, 215, 0, 0.5)" }}
                 transition={{ duration: 0.4 }}
               />
             </motion.div>

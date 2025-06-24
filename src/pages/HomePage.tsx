@@ -21,16 +21,16 @@ const HomePage: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-rose mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-gold mb-4">
             Catálogos Disponíveis
           </h1>
           <motion.div
-            className="w-24 h-0.5 bg-rose/20 mx-auto mb-4"
+            className="w-24 h-0.5 bg-cream/30 mx-auto mb-4"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
-          <p className="text-gray-600 text-lg">
+          <p className="text-cream/80 text-lg">
             Explore nossa coleção de perfumes e produtos de beleza
           </p>
         </motion.div>
@@ -46,7 +46,7 @@ const HomePage: React.FC = () => {
             >
               <Link to={`/catalogs/${category.id}`}>
                 <motion.div 
-                  className="overflow-hidden rounded-xl shadow-rose hover:shadow-lg transition-all duration-500 bg-white border border-gray-100"
+                  className="overflow-hidden rounded-xl shadow-cream hover:shadow-gold transition-all duration-500 bg-charcoal-light border border-cream/20"
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >
@@ -62,10 +62,10 @@ const HomePage: React.FC = () => {
                     <motion.div 
                       className="absolute inset-0"
                       initial={{ 
-                        background: "linear-gradient(to top, rgba(233, 30, 99, 0.8), rgba(233, 30, 99, 0.3) 50%, rgba(233, 30, 99, 0) 100%)" 
+                        background: "linear-gradient(to top, rgba(242, 218, 175, 0.8), rgba(242, 218, 175, 0.3) 50%, rgba(242, 218, 175, 0) 100%)" 
                       }}
                       whileHover={{ 
-                        background: "linear-gradient(to top, rgba(233, 30, 99, 0.9), rgba(233, 30, 99, 0.5) 50%, rgba(233, 30, 99, 0.1) 100%)"
+                        background: "linear-gradient(to top, rgba(242, 218, 175, 0.9), rgba(242, 218, 175, 0.5) 50%, rgba(242, 218, 175, 0.1) 100%)"
                       }}
                       transition={{ duration: 0.3 }}
                     />
@@ -76,16 +76,16 @@ const HomePage: React.FC = () => {
                       transition={{ duration: 0.4, ease: "easeOut" }}
                     >
                       <motion.h2 
-                        className="text-xl sm:text-2xl font-display font-bold text-white mb-2 flex items-center gap-2"
+                        className="text-xl sm:text-2xl font-display font-bold text-charcoal mb-2 flex items-center gap-2"
                         initial={{ opacity: 0.9 }}
                         whileHover={{ opacity: 1, scale: 1.02 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <Sparkles className="w-5 h-5" />
+                        <Sparkles className="w-5 h-5 text-gold" />
                         {category.name}
                       </motion.h2>
                       <motion.p 
-                        className="text-sm text-white/90 leading-relaxed"
+                        className="text-sm text-charcoal/80 leading-relaxed"
                         initial={{ opacity: 0.8 }}
                         whileHover={{ opacity: 1 }}
                         transition={{ duration: 0.2 }}
@@ -93,8 +93,8 @@ const HomePage: React.FC = () => {
                         {category.description}
                       </motion.p>
                       <motion.div
-                        className="w-12 h-0.5 bg-white/30 mt-3"
-                        whileHover={{ width: "100%", backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+                        className="w-12 h-0.5 bg-gold/50 mt-3"
+                        whileHover={{ width: "100%", backgroundColor: "rgba(255, 215, 0, 0.7)" }}
                         transition={{ duration: 0.4 }}
                       />
                     </motion.div>
@@ -109,10 +109,10 @@ const HomePage: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="text-center mt-12 p-6 bg-rose/5 rounded-xl border border-rose/10"
+          className="text-center mt-12 p-6 bg-cream/10 rounded-xl border border-cream/20"
         >
-          <p className="text-gray-600 text-sm">
-            <span className="font-semibold text-rose">Mais catálogos em breve!</span> 
+          <p className="text-cream/80 text-sm">
+            <span className="font-semibold text-gold">Mais catálogos em breve!</span> 
             <br />
             Estamos constantemente expandindo nossa coleção com mais de 10 novos catálogos planejados.
           </p>

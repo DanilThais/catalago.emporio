@@ -35,17 +35,17 @@ class ErrorBoundary extends Component<Props, State> {
   public render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
-          <div className="max-w-md w-full bg-white rounded-xl shadow-lg p-8 text-center">
-            <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <AlertTriangle className="w-8 h-8 text-red-600" />
+        <div className="min-h-screen bg-charcoal flex items-center justify-center p-4">
+          <div className="max-w-md w-full bg-charcoal-light rounded-xl shadow-cream p-8 text-center border border-cream/20">
+            <div className="w-16 h-16 bg-red-900/30 rounded-full flex items-center justify-center mx-auto mb-6">
+              <AlertTriangle className="w-8 h-8 text-red-400" />
             </div>
             
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">
+            <h1 className="text-2xl font-bold text-gold mb-4">
               Ops! Algo deu errado
             </h1>
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-cream/80 mb-6">
               Ocorreu um erro inesperado. Tente recarregar a página ou voltar ao início.
             </p>
             
@@ -71,10 +71,10 @@ class ErrorBoundary extends Component<Props, State> {
             
             {process.env.NODE_ENV === 'development' && this.state.error && (
               <details className="mt-6 text-left">
-                <summary className="cursor-pointer text-sm text-gray-500 hover:text-gray-700">
+                <summary className="cursor-pointer text-sm text-cream/70 hover:text-cream">
                   Detalhes do erro (desenvolvimento)
                 </summary>
-                <pre className="mt-2 text-xs bg-gray-100 p-3 rounded overflow-auto">
+                <pre className="mt-2 text-xs bg-charcoal p-3 rounded overflow-auto text-cream/60">
                   {this.state.error.toString()}
                 </pre>
               </details>
