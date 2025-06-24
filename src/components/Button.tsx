@@ -25,9 +25,9 @@ const Button: React.FC<ButtonProps> = ({
   };
 
   const variantClasses = {
-    primary: 'bg-rose hover:bg-rose-light text-white shadow-rose',
-    secondary: 'bg-deep-brown-light hover:bg-deep-brown text-rose shadow-md',
-    outline: 'bg-transparent border-2 border-rose text-rose hover:bg-rose/10',
+    primary: 'bg-golden-dark hover:bg-golden text-golden-cream shadow-golden',
+    secondary: 'bg-brown-light hover:bg-brown text-golden-cream shadow-md',
+    outline: 'bg-transparent border-2 border-golden-dark text-brown-dark hover:bg-golden-dark/10',
   };
 
   return (
@@ -38,7 +38,7 @@ const Button: React.FC<ButtonProps> = ({
         ${variantClasses[variant]} 
         ${fullWidth ? 'w-full' : ''} 
         rounded-lg font-medium transition-colors duration-300 
-        focus:outline-none focus:ring-2 focus:ring-rose focus:ring-opacity-50
+        focus:outline-none focus:ring-2 focus:ring-golden-dark focus:ring-opacity-50
         ${className}
       `}
       whileHover={{ scale: 1.03 }}

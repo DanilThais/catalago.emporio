@@ -34,9 +34,9 @@ const PDFViewerPage: React.FC = () => {
         <SEOHead title="Catálogo não encontrado - Empório Dubai" />
         <div className="py-12 text-center">
           <div className="max-w-md mx-auto">
-            <FileText className="w-16 h-16 text-rose/50 mx-auto mb-4" />
-            <h2 className="text-2xl font-bold text-rose mb-4">Catálogo não encontrado</h2>
-            <p className="text-gray-600 mb-6">
+            <FileText className="w-16 h-16 text-golden-dark/50 mx-auto mb-4" />
+            <h2 className="text-2xl font-bold text-brown-dark mb-4">Catálogo não encontrado</h2>
+            <p className="text-brown-dark/70 mb-6">
               O catálogo solicitado não foi encontrado em nossa base de dados.
             </p>
             <Button onClick={() => navigate('/')} variant="primary">
@@ -59,16 +59,16 @@ const PDFViewerPage: React.FC = () => {
       
       <div className="py-8">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="bg-white rounded-xl shadow-rose border border-rose/10 p-8">
-            <div className="w-16 h-16 bg-rose/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <FileText className="w-8 h-8 text-rose" />
+          <div className="bg-white rounded-xl shadow-golden border border-golden/20 p-8">
+            <div className="w-16 h-16 bg-golden/20 rounded-full flex items-center justify-center mx-auto mb-6">
+              <FileText className="w-8 h-8 text-golden-dark" />
             </div>
             
-            <h1 className="text-2xl sm:text-3xl font-display font-bold text-rose mb-4">
+            <h1 className="text-2xl sm:text-3xl font-display font-bold text-brown-dark mb-4">
               {catalog.title}
             </h1>
             
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <p className="text-brown-dark/80 mb-6 leading-relaxed">
               {catalog.description}
             </p>
             
@@ -116,12 +116,12 @@ const PDFViewerPage: React.FC = () => {
               </Button>
             </div>
             
-            <div className="mt-6 pt-6 border-t border-gray-100">
+            <div className="mt-6 pt-6 border-t border-golden/20">
               <div className="text-left space-y-3">
-                <h3 className="font-semibold text-gray-800 text-sm">
+                <h3 className="font-semibold text-brown-dark text-sm">
                   💡 Dicas para melhor experiência:
                 </h3>
-                <ul className="text-xs text-gray-600 space-y-1">
+                <ul className="text-xs text-brown-dark/70 space-y-1">
                   <li>• Desabilite o bloqueador de pop-ups para este site</li>
                   <li>• Certifique-se de que o JavaScript está habilitado</li>
                   <li>• Use um navegador atualizado (Chrome, Firefox, Safari, Edge)</li>
