@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Cormorant Garamond', serif;
-  @apply bg-golden-cream text-brown-dark font-display font-semibold;
+  @apply bg-golden-cream text-brown-dark font-display;
 }
 
 h1, h2, h3, h4, h5, h6 {

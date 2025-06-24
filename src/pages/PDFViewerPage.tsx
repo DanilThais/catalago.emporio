@@ -36,7 +36,7 @@ const PDFViewerPage: React.FC = () => {
           <div className="max-w-md mx-auto">
             <FileText className="w-16 h-16 text-golden-dark/50 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-brown-dark mb-4">Catálogo não encontrado</h2>
-            <p className="text-brown-dark/70 mb-6">
+            <p className="text-brown-dark/70 mb-6 font-medium">
               O catálogo solicitado não foi encontrado em nossa base de dados.
             </p>
             <Button onClick={() => navigate('/')} variant="primary">
@@ -68,7 +68,7 @@ const PDFViewerPage: React.FC = () => {
               {catalog.title}
             </h1>
             
-            <p className="text-brown-dark/80 mb-6 leading-relaxed font-script text-lg">
+            <p className="text-brown-dark/70 mb-6 leading-relaxed font-medium">
               {catalog.description}
             </p>
             
@@ -78,7 +78,7 @@ const PDFViewerPage: React.FC = () => {
                   <CheckCircle className="w-5 h-5" />
                   <span className="font-semibold">Catálogo aberto com sucesso!</span>
                 </div>
-                <p className="text-green-700 text-sm mt-2 font-script">
+                <p className="text-green-700 text-sm mt-2 font-medium">
                   O catálogo foi aberto em uma nova aba do seu navegador.
                 </p>
               </div>
@@ -90,7 +90,7 @@ const PDFViewerPage: React.FC = () => {
                   <AlertCircle className="w-5 h-5" />
                   <span className="font-semibold">Pop-ups bloqueados</span>
                 </div>
-                <p className="text-amber-700 text-sm font-script">
+                <p className="text-amber-700 text-sm font-medium">
                   Seu navegador bloqueou a abertura automática. Clique no botão abaixo para abrir o catálogo.
                 </p>
               </div>
@@ -121,7 +121,7 @@ const PDFViewerPage: React.FC = () => {
                 <h3 className="font-semibold text-brown-dark text-sm">
                   💡 Dicas para melhor experiência:
                 </h3>
-                <ul className="text-xs text-brown-dark/70 space-y-1">
+                <ul className="text-xs text-brown-dark/70 space-y-1 font-medium">
                   <li>• Desabilite o bloqueador de pop-ups para este site</li>
                   <li>• Certifique-se de que o JavaScript está habilitado</li>
                   <li>• Use um navegador atualizado (Chrome, Firefox, Safari, Edge)</li>

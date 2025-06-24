@@ -57,7 +57,7 @@ const CatalogListPage: React.FC = () => {
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
-          <p className="text-center text-brown-dark/80 text-xl max-w-2xl mx-auto font-script">
+          <p className="text-center text-brown-dark/70 text-lg max-w-2xl mx-auto font-medium">
             {category.description}
           </p>
         </motion.div>
@@ -81,10 +81,10 @@ const CatalogListPage: React.FC = () => {
           >
             <div className="bg-white rounded-xl p-8 border border-golden/20 shadow-golden max-w-md mx-auto">
               <Sparkles className="w-12 h-12 text-golden-dark/50 mx-auto mb-4" />
-              <p className="text-lg text-brown-dark mb-2">
+              <p className="text-lg text-brown-dark mb-2 font-semibold">
                 Catálogos em preparação
               </p>
-              <p className="text-sm text-brown-dark/70 font-script text-base">
+              <p className="text-sm text-brown-dark/70 font-medium">
                 Novos catálogos para esta categoria serão adicionados em breve.
               </p>
             </div>
@@ -100,7 +100,7 @@ const CatalogListPage: React.FC = () => {
           <p className="text-brown-dark/80 text-sm">
             <span className="font-semibold text-brown-dark">Expandindo constantemente!</span> 
             <br />
-            <span className="font-script text-base">Mais catálogos de {category.name} e outras categorias serão adicionados regularmente.</span>
+            <span className="font-medium">Mais catálogos de {category.name} e outras categorias serão adicionados regularmente.</span>
           </p>
         </motion.div>
       </div>
