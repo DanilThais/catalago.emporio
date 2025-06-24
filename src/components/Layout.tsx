@@ -24,8 +24,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-charcoal">
-      <header className="px-4 py-4 sm:px-6 md:px-12 md:py-6 flex items-center justify-between bg-charcoal-dark border-b border-cream/10">
+    <div className="min-h-screen bg-cream">
+      <header className="px-4 py-4 sm:px-6 md:px-12 md:py-6 flex items-center justify-between bg-charcoal-dark border-b border-gold/10">
         <div className="flex items-center gap-3 sm:gap-4">
           {showBackButton && (
             <Link 
@@ -46,8 +46,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       
-      <footer className="mt-auto px-4 py-6 sm:px-6 sm:py-8 md:px-12 text-center text-sm text-cream/60 border-t border-cream/10">
-        <p>© 2025 Empório Dubai Perfumaria. Todos os direitos reservados.</p>
+      <footer className="mt-auto px-4 py-6 sm:px-6 sm:py-8 md:px-12 text-center text-sm text-charcoal/60 border-t border-gold/10 bg-charcoal">
+        <p className="text-cream/60">© 2025 Empório Dubai Perfumaria. Todos os direitos reservados.</p>
       </footer>
     </div>
   );

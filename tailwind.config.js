@@ -42,8 +42,6 @@ export default {
       },
       boxShadow: {
         'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
-        'cream': '0 4px 20px rgba(242, 218, 175, 0.25)',
-        'gold': '0 4px 20px rgba(255, 215, 0, 0.15)',
       },
     },
   },

@@ -52,12 +52,12 @@ const CatalogListPage: React.FC = () => {
             </h1>
           </div>
           <motion.div
-            className="w-24 h-0.5 bg-cream/30 mx-auto mb-4"
+            className="w-24 h-0.5 bg-charcoal/20 mx-auto mb-4"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
-          <p className="text-center text-cream/80 text-lg max-w-2xl mx-auto">
+          <p className="text-center text-charcoal/80 text-lg max-w-2xl mx-auto">
             {category.description}
           </p>
         </motion.div>
@@ -79,12 +79,12 @@ const CatalogListPage: React.FC = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-center py-12"
           >
-            <div className="bg-cream/10 rounded-xl p-8 border border-cream/20 max-w-md mx-auto">
+            <div className="bg-charcoal/5 rounded-xl p-8 border border-charcoal/10 max-w-md mx-auto">
               <Sparkles className="w-12 h-12 text-gold/70 mx-auto mb-4" />
-              <p className="text-lg text-cream/90 mb-2">
+              <p className="text-lg text-charcoal/90 mb-2">
                 Catálogos em preparação
               </p>
-              <p className="text-sm text-cream/70">
+              <p className="text-sm text-charcoal/70">
                 Novos catálogos para esta categoria serão adicionados em breve.
               </p>
             </div>
@@ -95,9 +95,9 @@ const CatalogListPage: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-center mt-12 p-6 bg-cream/10 rounded-xl border border-cream/20"
+          className="text-center mt-12 p-6 bg-charcoal/5 rounded-xl border border-charcoal/10"
         >
-          <p className="text-cream/80 text-sm">
+          <p className="text-charcoal/80 text-sm">
             <span className="font-semibold text-gold">Expandindo constantemente!</span> 
             <br />
             Mais catálogos de {category.name} e outras categorias serão adicionados regularmente.

@@ -3,7 +3,7 @@
   "short_name": "Empório Dubai",
   "description": "Catálogos digitais da Empório Dubai Perfumaria",
   "theme_color": "#f2deaf",
-  "background_color": "#373737",
+  "background_color": "#f2deaf",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
