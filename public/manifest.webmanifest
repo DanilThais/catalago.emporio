@@ -2,8 +2,8 @@
   "name": "Empório Dubai Perfumaria - Catálogos",
   "short_name": "Empório Dubai",
   "description": "Catálogos digitais da Empório Dubai Perfumaria",
-  "theme_color": "#f2deaf",
-  "background_color": "#f2deaf",
+  "theme_color": "#E91E63",
+  "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
@@ -20,13 +20,13 @@
       "type": "image/png"
     },
     {
-      "src": "/pwa-512x512.png",
+      "src": "/pwa-192x192.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/pwa-512x512.png",
+      "src": "/pwa-192x192.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

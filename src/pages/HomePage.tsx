@@ -21,22 +21,16 @@ const HomePage: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-script text-charcoal mb-4">
-            Perfumes que contam
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-rose mb-4">
+            Catálogos Disponíveis
           </h1>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-script text-charcoal mb-6">
-            Histórias de amor.
-          </h2>
           <motion.div
-            className="w-24 h-0.5 bg-charcoal/20 mx-auto mb-6"
+            className="w-24 h-0.5 bg-rose/20 mx-auto mb-4"
             initial={{ width: 0 }}
             animate={{ width: 96 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           />
-          <h3 className="text-2xl sm:text-3xl font-display font-bold text-charcoal mb-4">
-            Catálogos Disponíveis
-          </h3>
-          <p className="text-charcoal/80 text-lg">
+          <p className="text-gray-600 text-lg">
             Explore nossa coleção de perfumes e produtos de beleza
           </p>
         </motion.div>
@@ -52,7 +46,7 @@ const HomePage: React.FC = () => {
             >
               <Link to={`/catalogs/${category.id}`}>
                 <motion.div 
-                  className="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-all duration-500 bg-white border border-gray-200"
+                  className="overflow-hidden rounded-xl shadow-rose hover:shadow-lg transition-all duration-500 bg-white border border-gray-100"
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 >
@@ -68,10 +62,10 @@ const HomePage: React.FC = () => {
                     <motion.div 
                       className="absolute inset-0"
                       initial={{ 
-                        background: "linear-gradient(to top, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.3) 50%, rgba(55, 55, 55, 0) 100%)" 
+                        background: "linear-gradient(to top, rgba(233, 30, 99, 0.8), rgba(233, 30, 99, 0.3) 50%, rgba(233, 30, 99, 0) 100%)" 
                       }}
                       whileHover={{ 
-                        background: "linear-gradient(to top, rgba(55, 55, 55, 0.9), rgba(55, 55, 55, 0.5) 50%, rgba(55, 55, 55, 0.1) 100%)"
+                        background: "linear-gradient(to top, rgba(233, 30, 99, 0.9), rgba(233, 30, 99, 0.5) 50%, rgba(233, 30, 99, 0.1) 100%)"
                       }}
                       transition={{ duration: 0.3 }}
                     />
@@ -115,10 +109,10 @@ const HomePage: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="text-center mt-12 p-6 bg-charcoal/5 rounded-xl border border-charcoal/10"
+          className="text-center mt-12 p-6 bg-rose/5 rounded-xl border border-rose/10"
         >
-          <p className="text-charcoal/80 text-sm">
-            <span className="font-semibold text-charcoal">Mais catálogos em breve!</span> 
+          <p className="text-gray-600 text-sm">
+            <span className="font-semibold text-rose">Mais catálogos em breve!</span> 
             <br />
             Estamos constantemente expandindo nossa coleção com mais de 10 novos catálogos planejados.
           </p>

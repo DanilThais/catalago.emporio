@@ -7,13 +7,13 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'pwa-64x64.png', 'pwa-192x192.png', 'pwa-512x512.png'],
+      includeAssets: ['favicon.ico', 'pwa-64x64.png', 'pwa-192x192.png'],
       manifest: {
         name: 'Empório Dubai Perfumaria - Catálogos',
         short_name: 'Empório Dubai',
         description: 'Catálogos digitais da Empório Dubai Perfumaria',
-        theme_color: '#f2deaf',
-        background_color: '#373737',
+        theme_color: '#E91E63',
+        background_color: '#ffffff',
         display: 'standalone',
         start_url: '/',
         scope: '/',
@@ -29,13 +29,13 @@ export default defineConfig({
             type: 'image/png'
           },
           {
-            src: '/pwa-512x512.png',
+            src: '/pwa-192x192.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any'
           },
           {
-            src: '/pwa-512x512.png',
+            src: '/pwa-192x192.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
