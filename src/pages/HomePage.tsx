@@ -109,7 +109,7 @@ const HomePage: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="text-center mt-12 p-6 bg-golden/10 rounded-xl border border-golden/20"
+          className="text-center mt-12 p-6 bg-white rounded-xl border border-golden/20 shadow-golden"
         >
           <p className="text-brown-dark/80 text-sm">
             <span className="font-semibold text-brown-dark">Mais catálogos em breve!</span> 

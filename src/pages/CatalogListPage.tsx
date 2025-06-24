@@ -79,7 +79,7 @@ const CatalogListPage: React.FC = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-center py-12"
           >
-            <div className="bg-golden/10 rounded-xl p-8 border border-golden/20 max-w-md mx-auto">
+            <div className="bg-white rounded-xl p-8 border border-golden/20 shadow-golden max-w-md mx-auto">
               <Sparkles className="w-12 h-12 text-golden-dark/50 mx-auto mb-4" />
               <p className="text-lg text-brown-dark mb-2">
                 Catálogos em preparação
@@ -95,7 +95,7 @@ const CatalogListPage: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="text-center mt-12 p-6 bg-golden/10 rounded-xl border border-golden/20"
+          className="text-center mt-12 p-6 bg-white rounded-xl border border-golden/20 shadow-golden"
         >
           <p className="text-brown-dark/80 text-sm">
             <span className="font-semibold text-brown-dark">Expandindo constantemente!</span> 
