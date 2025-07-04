@@ -20,6 +20,12 @@ export const categories: Category[] = [
     image: "/assets/AFNAN .jpg",
   },
   {
+    id: "internacionais",
+    name: "Internacionais",
+    description: "Perfumes importados e fragrâncias internacionais premium",
+    image: "https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg",
+  },
+  {
     id: "diversos",
     name: "Diversos",
     description: "Catálogo de produtos diversos",
