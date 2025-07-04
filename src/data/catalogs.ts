@@ -7,7 +7,7 @@ export const catalogs: Catalog[] = [
     categoryId: "lattafa",
     title: "Lattafa - Catálogo Principal",
     description: "Catálogo completo de perfumes Lattafa com todas as fragrâncias disponíveis",
-    thumbnailUrl: "https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg",
+    thumbnailUrl: "/assets/lattafa-catalog.jpg",
     pdfUrl: "https://drive.google.com/file/d/1Eb2aHLnar0j642Jhtxgf8z9dxUAYiUAV/view?usp=sharing",
   },
   {
@@ -15,7 +15,7 @@ export const catalogs: Catalog[] = [
     categoryId: "maison-alhambra",
     title: "Maison Alhambra - Coleção Exclusiva",
     description: "Coleção exclusiva Maison Alhambra com perfumes premium",
-    thumbnailUrl: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
+    thumbnailUrl: "/assets/maison-alhambra-catalog.jpg",
     pdfUrl: "https://drive.google.com/file/d/17WqYs4Kl2Ad7__V5F8JYJehT6NCAN-aG/view?usp=sharing",
   },
   {
