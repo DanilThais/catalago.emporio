@@ -19,6 +19,14 @@ export const catalogs: Catalog[] = [
     pdfUrl: "https://drive.google.com/file/d/17WqYs4Kl2Ad7__V5F8JYJehT6NCAN-aG/view?usp=sharing",
   },
   {
+    id: "orientica-main",
+    categoryId: "orientica",
+    title: "Orientica - Coleção Oriental",
+    description: "Descubra a elegância das fragrâncias orientais Orientica, com notas exóticas e sofisticadas",
+    thumbnailUrl: "/assets/AFNAN .jpg",
+    pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=sharing",
+  },
+  {
     id: "diversos-main",
     categoryId: "diversos",
     title: "Diversos - Produtos Variados",
