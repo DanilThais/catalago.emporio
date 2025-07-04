@@ -14,6 +14,12 @@ export const categories: Category[] = [
     image: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
   },
   {
+    id: "orientica",
+    name: "Orientica",
+    description: "Catálogo completo de perfumes Orientica",
+    image: "https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg",
+  },
+  {
     id: "diversos",
     name: "Diversos",
     description: "Catálogo de produtos diversos",
