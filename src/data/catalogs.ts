@@ -7,7 +7,7 @@ export const catalogs: Catalog[] = [
     categoryId: "lattafa",
     title: "Lattafa - Catálogo Principal",
     description: "Catálogo completo de perfumes Lattafa com todas as fragrâncias disponíveis",
-    thumbnailUrl: "/assets/lattafa-catalog.jpg",
+    thumbnailUrl: "/assets/image.png",
     pdfUrl: "https://drive.google.com/file/d/1Eb2aHLnar0j642Jhtxgf8z9dxUAYiUAV/view?usp=sharing",
   },
   {
@@ -15,7 +15,7 @@ export const catalogs: Catalog[] = [
     categoryId: "maison-alhambra",
     title: "Maison Alhambra - Coleção Exclusiva",
     description: "Coleção exclusiva Maison Alhambra com perfumes premium",
-    thumbnailUrl: "/assets/maison-alhambra-catalog.jpg",
+    thumbnailUrl: "/assets/image copy.png",
     pdfUrl: "https://drive.google.com/file/d/17WqYs4Kl2Ad7__V5F8JYJehT6NCAN-aG/view?usp=sharing",
   },
   {
@@ -23,7 +23,7 @@ export const catalogs: Catalog[] = [
     categoryId: "orientica",
     title: "Orientica - Catálogo 1",
     description: "Primeiro catálogo de perfumes Orientica",
-    thumbnailUrl: "/assets/orientica-catalog-1.jpg",
+    thumbnailUrl: "/assets/image copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=drive_link",
   },
   {
@@ -31,7 +31,7 @@ export const catalogs: Catalog[] = [
     categoryId: "orientica",
     title: "Orientica - Catálogo 2",
     description: "Segundo catálogo de perfumes Orientica",
-    thumbnailUrl: "/assets/orientica-catalog-2.jpg",
+    thumbnailUrl: "/assets/image copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/11h_O5SvuQCnCWWNovrY4107qH8GJZi1W/view?usp=drive_link",
   },
   {
@@ -39,7 +39,7 @@ export const catalogs: Catalog[] = [
     categoryId: "internacionais",
     title: "Internacionais - Catálogo 1",
     description: "Primeiro catálogo de perfumes internacionais",
-    thumbnailUrl: "/assets/internacionais-catalog-1.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1VUgN65etczMht7DWFm0bt7GaMLsORo6w/view?usp=drive_link",
   },
   {
@@ -47,7 +47,7 @@ export const catalogs: Catalog[] = [
     categoryId: "internacionais",
     title: "Internacionais - Catálogo 2",
     description: "Segundo catálogo de perfumes internacionais",
-    thumbnailUrl: "/assets/internacionais-catalog-2.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/10OSyWG1OWBcqlyyl3sIEvtP7cXOwaowH/view?usp=drive_link",
   },
   {
@@ -55,7 +55,7 @@ export const catalogs: Catalog[] = [
     categoryId: "armaf",
     title: "Armaf - Catálogo 1",
     description: "Primeiro catálogo de perfumes Armaf",
-    thumbnailUrl: "/assets/armaf-catalog-1.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1J-UbkVdXc-noL6m1BeyIs7STbaLFjLmG/view?usp=drive_link",
   },
   {
@@ -63,7 +63,7 @@ export const catalogs: Catalog[] = [
     categoryId: "armaf",
     title: "Armaf - Catálogo 2",
     description: "Segundo catálogo de perfumes Armaf",
-    thumbnailUrl: "/assets/armaf-catalog-2.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/10nzeAPd6D4bouHXVJsN8d5wgKzjgasaY/view?usp=drive_link",
   },
   {
@@ -71,7 +71,7 @@ export const catalogs: Catalog[] = [
     categoryId: "arabic-collection",
     title: "Arabic Collection - Catálogo 1",
     description: "Primeiro catálogo da coleção árabe",
-    thumbnailUrl: "/assets/arabic-collection-catalog-1.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1TL5s5UmqXOSwXfbvw3FyHIa9_f8Nhrnw/view?usp=drive_link",
   },
   {
@@ -79,7 +79,7 @@ export const catalogs: Catalog[] = [
     categoryId: "arabic-collection",
     title: "Arabic Collection - Catálogo 2",
     description: "Segundo catálogo da coleção árabe",
-    thumbnailUrl: "/assets/arabic-collection-catalog-2.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy copy copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1YswkJuXCTtjL5bfHY-cpkGa_fpOEOi00/view?usp=drive_link",
   },
   {
@@ -87,7 +87,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-wataniah",
     title: "Al Wataniah - Catálogo 1",
     description: "Primeiro catálogo de perfumes Al Wataniah",
-    thumbnailUrl: "/assets/al-wataniah-catalog-1.jpg",
+    thumbnailUrl: "/assets/image copy copy copy copy copy copy copy copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1XfHZnHgbn8_SU_Oy2e3Z9Mae398Jc4fv/view?usp=drive_link",
   },
   {
@@ -95,7 +95,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-wataniah",
     title: "Al Wataniah - Catálogo 2",
     description: "Segundo catálogo de perfumes Al Wataniah",
-    thumbnailUrl: "/assets/al-wataniah-catalog-2.jpg",
+    thumbnailUrl: "/assets/image.png",
     pdfUrl: "https://drive.google.com/file/d/1_SzsdD0BE6-ARJMLw_RrqSMUxmr_hrx5/view",
   },
   {
@@ -103,7 +103,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-haramain",
     title: "Al Haramain - Catálogo 1",
     description: "Primeiro catálogo de perfumes Al Haramain",
-    thumbnailUrl: "/assets/al-haramain-catalog-1.jpg",
+    thumbnailUrl: "/assets/image copy.png",
     pdfUrl: "https://drive.google.com/file/d/1bD8Z_Nc9xMsVSCs3Bp3LEwtzWlB_-yfT/view",
   },
   {
@@ -111,7 +111,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-haramain",
     title: "Al Haramain - Catálogo 2",
     description: "Segundo catálogo de perfumes Al Haramain",
-    thumbnailUrl: "/assets/al-haramain-catalog-2.jpg",
+    thumbnailUrl: "/assets/image copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1pkvY1et_RYjKvES42rFHVVL70bMdKyy2/view",
   },
   {
@@ -119,7 +119,7 @@ export const catalogs: Catalog[] = [
     categoryId: "afnan",
     title: "Afnan - Catálogo 1",
     description: "Primeiro catálogo de perfumes Afnan",
-    thumbnailUrl: "/assets/afnan-catalog-1.jpg",
+    thumbnailUrl: "/assets/AFNAN .jpg",
     pdfUrl: "https://drive.google.com/file/d/1neJbsp7KonCFi82J0J94MFALHWsYeCV_/view?usp=drive_link",
   },
   {
@@ -127,7 +127,7 @@ export const catalogs: Catalog[] = [
     categoryId: "afnan",
     title: "Afnan - Catálogo 2",
     description: "Segundo catálogo de perfumes Afnan",
-    thumbnailUrl: "/assets/afnan-catalog-2.jpg",
+    thumbnailUrl: "/assets/AFNAN .jpg",
     pdfUrl: "https://drive.google.com/file/d/15rm6VWM0irJ-b8-Zxl0siO4pdIzavJLg/view?usp=drive_link",
   },
   {
@@ -135,7 +135,7 @@ export const catalogs: Catalog[] = [
     categoryId: "diversos",
     title: "Diversos - Produtos Variados",
     description: "Catálogo de produtos diversos da nossa coleção",
-    thumbnailUrl: "/assets/diversos-catalog.jpg",
+    thumbnailUrl: "/assets/image copy copy copy.png",
     pdfUrl: "https://drive.google.com/file/d/1xldP6m-Dd0WsfG6V0pRhYJVAJdbF4pOK/view?usp=sharing",
   },
 ];
