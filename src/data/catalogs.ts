@@ -24,7 +24,7 @@ export const catalogs: Catalog[] = [
     title: "Orientica - Catálogo Principal",
     description: "Catálogo completo de perfumes Orientica com todas as fragrâncias disponíveis",
     thumbnailUrl: "https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg",
-    pdfUrl: "https://drive.google.com/file/d/1k8AJXIVXtUZtXJItaGeBFHYUr6xFz7MK/view?usp=drive_link",
+    pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=drive_link",
   },
   {
     id: "diversos-main",
