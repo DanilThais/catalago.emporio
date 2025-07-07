@@ -59,6 +59,14 @@ export const catalogs: Catalog[] = [
     pdfUrl: "https://drive.google.com/file/d/1bD8Z_Nc9xMsVSCs3Bp3LEwtzWlB_-yfT/view?usp=drive_link",
   },
   {
+    id: "afnan-main",
+    categoryId: "afnan",
+    title: "Afnan - Catálogo Principal",
+    description: "Coleção completa de perfumes Afnan com fragrâncias premium e sofisticadas de alta qualidade",
+    thumbnailUrl: "/assets/afnan-perfumes.jpg",
+    pdfUrl: "https://drive.google.com/file/d/1neJbsp7KonCFi82J0J94MFALHWsYeCV_/view?usp=drive_link",
+  },
+  {
     id: "internacionais-catalog-1",
     categoryId: "internacionais",
     title: "Internacionais - Coleção Premium Vol. 1",

@@ -44,6 +44,12 @@ export const categories: Category[] = [
     image: "/assets/al-haramain-perfume.jpg",
   },
   {
+    id: "afnan",
+    name: "Afnan",
+    description: "Perfumes Afnan com fragrâncias premium e sofisticadas de alta qualidade",
+    image: "/assets/afnan-perfumes.jpg",
+  },
+  {
     id: "internacionais",
     name: "Internacionais",
     description: "Perfumes importados e fragrâncias internacionais premium",
