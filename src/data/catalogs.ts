@@ -35,6 +35,14 @@ export const catalogs: Catalog[] = [
     pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=sharing",
   },
   {
+    id: "arabic-collection-main",
+    categoryId: "arabic-collection",
+    title: "Arabic Collection - Catálogo Principal",
+    description: "Coleção completa de perfumes árabes com fragrâncias autênticas e tradicionais do Oriente Médio",
+    thumbnailUrl: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
+    pdfUrl: "https://drive.google.com/file/d/1YswkJuXCTtjL5bfHY-cpkGa_fpOEOi00/view?usp=drive_link",
+  },
+  {
     id: "internacionais-catalog-1",
     categoryId: "internacionais",
     title: "Internacionais - Coleção Premium Vol. 1",

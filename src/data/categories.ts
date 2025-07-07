@@ -26,6 +26,12 @@ export const categories: Category[] = [
     image: "/assets/Armaf.jpg.jpg",
   },
   {
+    id: "arabic-collection",
+    name: "Arabic Collection",
+    description: "Coleção árabe com fragrâncias autênticas e tradicionais do Oriente Médio",
+    image: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
+  },
+  {
     id: "internacionais",
     name: "Internacionais",
     description: "Perfumes importados e fragrâncias internacionais premium",
