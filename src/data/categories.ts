@@ -32,6 +32,12 @@ export const categories: Category[] = [
     image: "/assets/files_4496860-1751877217614-Arabic Collection.jpg.jpg",
   },
   {
+    id: "al-wataniah",
+    name: "Al Wataniah",
+    description: "Perfumes Al Wataniah com fragrâncias árabes autênticas e luxuosas",
+    image: "/assets/Al Wataniah.jpg.jpg",
+  },
+  {
     id: "internacionais",
     name: "Internacionais",
     description: "Perfumes importados e fragrâncias internacionais premium",

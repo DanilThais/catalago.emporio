@@ -43,6 +43,14 @@ export const catalogs: Catalog[] = [
     pdfUrl: "https://drive.google.com/file/d/1YswkJuXCTtjL5bfHY-cpkGa_fpOEOi00/view?usp=drive_link",
   },
   {
+    id: "al-wataniah-main",
+    categoryId: "al-wataniah",
+    title: "Al Wataniah - Catálogo Principal",
+    description: "Coleção completa de perfumes Al Wataniah com fragrâncias árabes autênticas e luxuosas",
+    thumbnailUrl: "/assets/Al Wataniah.jpg.jpg",
+    pdfUrl: "https://drive.google.com/file/d/1_SzsdD0BE6-ARJMLw_RrqSMUxmr_hrx5/view?usp=drive_link",
+  },
+  {
     id: "internacionais-catalog-1",
     categoryId: "internacionais",
     title: "Internacionais - Coleção Premium Vol. 1",
