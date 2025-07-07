@@ -27,6 +27,14 @@ export const catalogs: Catalog[] = [
     pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=sharing",
   },
   {
+    id: "armaf-main",
+    categoryId: "armaf",
+    title: "Armaf - Catálogo Principal",
+    description: "Catálogo completo de perfumes Armaf com fragrâncias exclusivas e sofisticadas",
+    thumbnailUrl: "/assets/Armaf.jpg.jpg",
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q",
+  },
+  {
     id: "internacionais-catalog-1",
     categoryId: "internacionais",
     title: "Internacionais - Coleção Premium Vol. 1",

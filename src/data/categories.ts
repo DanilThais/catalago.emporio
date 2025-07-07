@@ -20,6 +20,12 @@ export const categories: Category[] = [
     image: "/assets/AFNAN .jpg",
   },
   {
+    id: "armaf",
+    name: "Armaf",
+    description: "Perfumes Armaf com fragrâncias exclusivas e sofisticadas",
+    image: "/assets/Armaf.jpg.jpg",
+  },
+  {
     id: "internacionais",
     name: "Internacionais",
     description: "Perfumes importados e fragrâncias internacionais premium",
