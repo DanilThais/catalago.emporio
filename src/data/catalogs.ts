@@ -39,7 +39,7 @@ export const catalogs: Catalog[] = [
     categoryId: "arabic-collection",
     title: "Arabic Collection - Catálogo Principal",
     description: "Coleção completa de perfumes árabes com fragrâncias autênticas e tradicionais do Oriente Médio",
-    thumbnailUrl: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
+    thumbnailUrl: "/assets/files_4496860-1751877217614-Arabic Collection.jpg.jpg",
     pdfUrl: "https://drive.google.com/file/d/1YswkJuXCTtjL5bfHY-cpkGa_fpOEOi00/view?usp=drive_link",
   },
   {

@@ -29,7 +29,7 @@ export const categories: Category[] = [
     id: "arabic-collection",
     name: "Arabic Collection",
     description: "Coleção árabe com fragrâncias autênticas e tradicionais do Oriente Médio",
-    image: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
+    image: "/assets/files_4496860-1751877217614-Arabic Collection.jpg.jpg",
   },
   {
     id: "internacionais",
