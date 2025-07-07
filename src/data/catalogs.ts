@@ -32,7 +32,7 @@ export const catalogs: Catalog[] = [
     title: "Armaf - Catálogo Principal",
     description: "Catálogo completo de perfumes Armaf com fragrâncias exclusivas e sofisticadas",
     thumbnailUrl: "/assets/Armaf.jpg.jpg",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q",
+    pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=sharing",
   },
   {
     id: "internacionais-catalog-1",
