@@ -35,14 +35,6 @@ export const catalogs: Catalog[] = [
     pdfUrl: "https://drive.google.com/file/d/1VUgN65etczMht7DWFm0bt7GaMLsORo6w/view?usp=drive_link",
   },
   {
-    id: "internacionais-catalog-2",
-    categoryId: "internacionais",
-    title: "Internacionais - Coleção Premium Vol. 2",
-    description: "Segunda coleção de perfumes internacionais com as mais refinadas fragrâncias do mercado global",
-    thumbnailUrl: "https://drive.google.com/file/d/10OSyWG1OWBcqlyyl3sIEvtP7cXOwaowH/view?usp=drive_link",
-    pdfUrl: "",
-  },
-  {
     id: "diversos-main",
     categoryId: "diversos",
     title: "Diversos - Produtos Variados",
