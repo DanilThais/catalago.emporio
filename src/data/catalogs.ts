@@ -55,7 +55,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-haramain",
     title: "Al Haramain - Catálogo Principal",
     description: "Coleção completa de perfumes Al Haramain com fragrâncias premium e sofisticadas do Oriente Médio",
-    thumbnailUrl: "/assets/al-haramain-perfume.jpg",
+    thumbnailUrl: "/assets/Al Haramain.jpg.jpg",
     pdfUrl: "https://drive.google.com/file/d/1bD8Z_Nc9xMsVSCs3Bp3LEwtzWlB_-yfT/view?usp=drive_link",
   },
   {
