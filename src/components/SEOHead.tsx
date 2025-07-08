@@ -15,6 +15,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   keywords = 'perfumes, fragrâncias, beleza, catálogo, Lattafa, Maison Alhambra, Dubai',
   image = 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg',
   url = 'https://heroic-gelato-1d4b31.netlify.app/catalago.emporio/'
+  url = 'https://heroic-gelato-1d4b31.netlify.app/'
 }) => {
   return (
     <Helmet>
