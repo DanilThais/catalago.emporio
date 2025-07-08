@@ -94,7 +94,7 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/',
+  base: '/catalago.emporio/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',

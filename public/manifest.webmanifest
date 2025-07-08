@@ -6,8 +6,8 @@
   "background_color": "#F5E6A8",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/catalago.emporio/",
+  "start_url": "/catalago.emporio/",
   "icons": [
     {
       "src": "/pwa-64x64.png",

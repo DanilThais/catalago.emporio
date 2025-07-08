@@ -14,7 +14,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   description = 'Explore nossa coleção exclusiva de perfumes e produtos de beleza. Catálogos digitais da Empório Dubai Perfumaria.',
   keywords = 'perfumes, fragrâncias, beleza, catálogo, Lattafa, Maison Alhambra, Dubai',
   image = 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg',
-  url = 'https://heroic-gelato-1d4b31.netlify.app/'
+  url = 'https://danilthais.github.io/catalago.emporio/'
 }) => {
   return (
     <Helmet>

@@ -29,7 +29,7 @@ class ErrorBoundary extends Component<Props, State> {
   };
 
   private handleGoHome = () => {
-    window.location.href = '/';
+    window.location.href = '/catalago.emporio/';
   };
 
   public render() {
