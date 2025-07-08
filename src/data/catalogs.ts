@@ -63,7 +63,7 @@ export const catalogs: Catalog[] = [
     categoryId: "afnan",
     title: "Afnan - Catálogo Principal",
     description: "Coleção completa de perfumes Afnan com fragrâncias premium e sofisticadas de alta qualidade",
-    thumbnailUrl: "https://images.pexels.com/photos/6621464/pexels-photo-6621464.jpeg",
+    thumbnailUrl: "/assets/afnan-perfumes.jpg",
     pdfUrl: "https://drive.google.com/file/d/1neJbsp7KonCFi82J0J94MFALHWsYeCV_/view?usp=drive_link",
   },
   {

@@ -47,7 +47,7 @@ export const categories: Category[] = [
     id: "afnan",
     name: "Afnan",
     description: "Perfumes Afnan com fragrâncias premium e sofisticadas de alta qualidade",
-    image: "https://images.pexels.com/photos/6621464/pexels-photo-6621464.jpeg",
+    image: "/assets/afnan-perfumes.jpg",
   },
   {
     id: "internacionais",
