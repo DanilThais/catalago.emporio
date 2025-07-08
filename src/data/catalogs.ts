@@ -7,7 +7,7 @@ export const catalogs: Catalog[] = [
     categoryId: "lattafa",
     title: "Lattafa - Catálogo Principal",
     description: "Catálogo completo de perfumes Lattafa com todas as fragrâncias disponíveis",
-    thumbnailUrl: "/assets/lattafa-catalog.jpg",
+    thumbnailUrl: "https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1Eb2aHLnar0j642Jhtxgf8z9dxUAYiUAV/view?usp=sharing",
   },
   {
@@ -15,7 +15,7 @@ export const catalogs: Catalog[] = [
     categoryId: "maison-alhambra",
     title: "Maison Alhambra - Coleção Exclusiva",
     description: "Coleção exclusiva Maison Alhambra com perfumes premium",
-    thumbnailUrl: "/assets/maison-alhambra-catalog.jpg",
+    thumbnailUrl: "https://images.pexels.com/photos/3766121/pexels-photo-3766121.jpeg",
     pdfUrl: "https://drive.google.com/file/d/17WqYs4Kl2Ad7__V5F8JYJehT6NCAN-aG/view?usp=sharing",
   },
   {
@@ -23,7 +23,7 @@ export const catalogs: Catalog[] = [
     categoryId: "orientica",
     title: "Orientica - Coleção Oriental",
     description: "Descubra a elegância das fragrâncias orientais Orientica, com notas exóticas e sofisticadas",
-    thumbnailUrl: "/assets/AFNAN .jpg",
+    thumbnailUrl: "https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=sharing",
   },
   {
@@ -31,7 +31,7 @@ export const catalogs: Catalog[] = [
     categoryId: "armaf",
     title: "Armaf - Catálogo Principal",
     description: "Catálogo completo de perfumes Armaf com fragrâncias exclusivas e sofisticadas",
-    thumbnailUrl: "/assets/Armaf.jpg.jpg",
+    thumbnailUrl: "https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1K-UtQ9BlQGAYZDJgv_Mq67zbaDuY7D9q/view?usp=sharing",
   },
   {
@@ -39,7 +39,7 @@ export const catalogs: Catalog[] = [
     categoryId: "arabic-collection",
     title: "Arabic Collection - Catálogo Principal",
     description: "Coleção completa de perfumes árabes com fragrâncias autênticas e tradicionais do Oriente Médio",
-    thumbnailUrl: "/assets/files_4496860-1751877217614-Arabic Collection.jpg.jpg",
+    thumbnailUrl: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1YswkJuXCTtjL5bfHY-cpkGa_fpOEOi00/view?usp=drive_link",
   },
   {
@@ -47,7 +47,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-wataniah",
     title: "Al Wataniah - Catálogo Principal",
     description: "Coleção completa de perfumes Al Wataniah com fragrâncias árabes autênticas e luxuosas",
-    thumbnailUrl: "/assets/Al Wataniah.jpg.jpg",
+    thumbnailUrl: "https://images.pexels.com/photos/3735657/pexels-photo-3735657.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1_SzsdD0BE6-ARJMLw_RrqSMUxmr_hrx5/view?usp=drive_link",
   },
   {
@@ -55,7 +55,7 @@ export const catalogs: Catalog[] = [
     categoryId: "al-haramain",
     title: "Al Haramain - Catálogo Principal",
     description: "Coleção completa de perfumes Al Haramain com fragrâncias premium e sofisticadas do Oriente Médio",
-    thumbnailUrl: "https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg",
+    thumbnailUrl: "/assets/al-haramain-perfume.jpg",
     pdfUrl: "https://drive.google.com/file/d/1bD8Z_Nc9xMsVSCs3Bp3LEwtzWlB_-yfT/view?usp=drive_link",
   },
   {
@@ -63,7 +63,7 @@ export const catalogs: Catalog[] = [
     categoryId: "afnan",
     title: "Afnan - Catálogo Principal",
     description: "Coleção completa de perfumes Afnan com fragrâncias premium e sofisticadas de alta qualidade",
-    thumbnailUrl: "/assets/AFNAN .jpg",
+    thumbnailUrl: "/assets/afnan-perfumes.jpg",
     pdfUrl: "https://drive.google.com/file/d/1neJbsp7KonCFi82J0J94MFALHWsYeCV_/view?usp=drive_link",
   },
   {
@@ -71,7 +71,7 @@ export const catalogs: Catalog[] = [
     categoryId: "internacionais",
     title: "Internacionais - Coleção Premium Vol. 1",
     description: "Primeira coleção de perfumes internacionais com fragrâncias exclusivas e sofisticadas",
-    thumbnailUrl: "https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg",
+    thumbnailUrl: "https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1VUgN65etczMht7DWFm0bt7GaMLsORo6w/view?usp=drive_link",
   },
   {
@@ -79,7 +79,7 @@ export const catalogs: Catalog[] = [
     categoryId: "diversos",
     title: "Diversos - Produtos Variados",
     description: "Catálogo de produtos diversos da nossa coleção",
-    thumbnailUrl: "https://images.pexels.com/photos/3321416/pexels-photo-3321416.jpeg",
+    thumbnailUrl: "https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1xldP6m-Dd0WsfG6V0pRhYJVAJdbF4pOK/view?usp=sharing",
   },
 ];
