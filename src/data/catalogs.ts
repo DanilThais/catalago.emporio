@@ -82,4 +82,12 @@ export const catalogs: Catalog[] = [
     thumbnailUrl: "https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg",
     pdfUrl: "https://drive.google.com/file/d/1xldP6m-Dd0WsfG6V0pRhYJVAJdbF4pOK/view?usp=sharing",
   },
+  {
+    id: "body-splash-main",
+    categoryId: "body-splash",
+    title: "Body Splash - Catálogo Principal",
+    description: "Coleção completa de body splashes refrescantes com fragrâncias leves e duradouras para uso diário",
+    thumbnailUrl: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg",
+    pdfUrl: "https://drive.google.com/file/d/17nGG5j00nJG8AnP0aGc55pPfIHcI9msU/view?usp=drive_link",
+  },
 ];

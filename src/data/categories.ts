@@ -61,4 +61,10 @@ export const categories: Category[] = [
     description: "Catálogo de produtos diversos",
     image: "https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg",
   },
+  {
+    id: "body-splash",
+    name: "Body Splash",
+    description: "Coleção de body splashes refrescantes e perfumados para o dia a dia",
+    image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg",
+  },
 ];
