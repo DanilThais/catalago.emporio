@@ -41,13 +41,13 @@ export const categories: Category[] = [
     id: "al-haramain",
     name: "Al Haramain",
     description: "Perfumes Al Haramain com fragrâncias premium e sofisticadas do Oriente Médio",
-    image: "/assets/al-haramain-perfume.jpg",
+    image: "https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg",
   },
   {
     id: "afnan",
     name: "Afnan",
     description: "Perfumes Afnan com fragrâncias premium e sofisticadas de alta qualidade",
-    image: "/assets/afnan-perfumes.jpg",
+    image: "https://images.pexels.com/photos/3735657/pexels-photo-3735657.jpeg",
   },
   {
     id: "internacionais",
