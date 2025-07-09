@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
     >
       <motion.img
-        src="/logo-emporio-dubai.png"
+        src="logo-emporio-dubai.png"
         alt="Empório Dubai Perfumaria"
         className="h-8 sm:h-10 w-auto"
         whileHover={{ scale: 1.05 }}
