@@ -9,8 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "type-check": "tsc --noEmit",
+    "build:github": "vite build --base=/catalago.emporio/",
+    "build:netlify": "vite build --base=./",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build:github && gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.0.8",
