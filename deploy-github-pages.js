@@ -3,10 +3,17 @@
 /**
  * Script personalizado para deploy no GitHub Pages
  * Resolve problemas de path muito longo no Windows
+ * Convertido para ES modules
  */
 
-const ghpages = require('gh-pages');
-const path = require('path');
+import ghpages from 'gh-pages';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Obter __dirname em ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const deployOptions = {
   branch: 'gh-pages',
@@ -20,7 +27,7 @@ const deployOptions = {
 };
 
 console.log('🚀 Iniciando deploy para GitHub Pages...');
-console.log('📁 Pasta de build:', path.resolve('dist'));
+console.log('📁 Pasta de build:', resolve(__dirname, 'dist'));
 
 ghpages.publish('dist', deployOptions, (err) => {
   if (err) {
