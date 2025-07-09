@@ -1,24 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-import { loadEnv } from 'vite';
 
-export default defineConfig(({ command, mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
-  
-  // Determina o base path baseado no ambiente ou comando
-  const getBasePath = () => {
-    if (process.env.DEPLOY_TARGET === 'github') return '/catalago.emporio/';
-    if (process.env.DEPLOY_TARGET === 'netlify') return './';
-    if (command === 'build' && process.argv.includes('--base=/catalago.emporio/')) return '/catalago.emporio/';
-    if (command === 'build' && process.argv.includes('--base=./')) return './';
-    return './'; // Default para desenvolvimento e Netlify
-  };
-
-  const basePath = getBasePath();
-  
-  return {
-    plugins: [
+export default defineConfig({
+  plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
@@ -27,30 +12,30 @@ export default defineConfig(({ command, mode }) => {
         name: 'Empório Dubai Perfumaria - Catálogos',
         short_name: 'Empório Dubai',
         description: 'Catálogos digitais da Empório Dubai Perfumaria',
-        theme_color: '#E91E63',
-        background_color: '#ffffff',
+        theme_color: '#D4AF37',
+        background_color: '#F5E6A8',
         display: 'standalone',
-        start_url: basePath,
-        scope: basePath,
+        start_url: '/catalago.emporio/',
+        scope: '/catalago.emporio/',
         icons: [
           {
-            src: basePath === './' ? 'pwa-64x64.png' : '/catalago.emporio/pwa-64x64.png',
+            src: '/catalago.emporio/pwa-64x64.png',
             sizes: '64x64',
             type: 'image/png'
           },
           {
-            src: basePath === './' ? 'pwa-192x192.png' : '/catalago.emporio/pwa-192x192.png',
+            src: '/catalago.emporio/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: basePath === './' ? 'pwa-192x192.png' : '/catalago.emporio/pwa-192x192.png',
+            src: '/catalago.emporio/pwa-192x192.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any'
           },
           {
-            src: basePath === './' ? 'pwa-192x192.png' : '/catalago.emporio/pwa-192x192.png',
+            src: '/catalago.emporio/pwa-192x192.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
@@ -109,7 +94,7 @@ export default defineConfig(({ command, mode }) => {
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: basePath,
+  base: '/catalago.emporio/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -126,5 +111,4 @@ export default defineConfig(({ command, mode }) => {
       }
     }
   }
-};
 });
