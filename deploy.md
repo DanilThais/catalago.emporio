@@ -1,58 +1,53 @@
-# Guia de Implantação - GitHub Pages
+# Deployment Guide - Netlify
 
-## Como implantar o projeto
+## How to deploy the project
 
-### 1. Preparação
-Certifique-se de que todas as alterações estão commitadas e enviadas para o repositório:
+This project is configured to deploy to Netlify, which provides seamless deployment without requiring Git in the development environment.
 
-```bash
-git add .
-git commit -m "Preparar para implantação"
-git push origin main
-```
+### Automatic Deployment
 
-### 2. Executar a implantação
-Execute o comando de implantação:
+The project includes a `netlify.toml` configuration file that automatically handles the build and deployment process when you use the deploy action in this environment.
 
-```bash
-npm run deploy
-```
+### Manual Deployment to Netlify
 
-Este comando irá:
-- Executar automaticamente `npm run build` (através do script `predeploy`)
-- Criar/atualizar a branch `gh-pages` com o conteúdo da pasta `dist`
-- Enviar a branch `gh-pages` para o GitHub
+If you want to deploy manually to your own Netlify account:
 
-### 3. Configurar o GitHub Pages
-1. Vá para o seu repositório no GitHub
-2. Acesse **Settings** > **Pages**
-3. Em **Source**, selecione **Deploy from a branch**
-4. Escolha a branch **gh-pages** e a pasta **/ (root)**
-5. Clique em **Save**
+1. **Build the project locally:**
+   ```bash
+   npm run build
+   ```
 
-### 4. Acessar o site
-Após alguns minutos, seu site estará disponível em:
-`https://danilthais.github.io/catalago.emporio/`
+2. **Deploy to Netlify:**
+   - Go to [netlify.com](https://netlify.com) and sign up/login
+   - Drag and drop the `dist` folder to the Netlify dashboard
+   - Or use the Netlify CLI: `npx netlify deploy --prod --dir=dist`
 
-## Scripts disponíveis
+### Available Scripts
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Gera os arquivos de produção na pasta `dist`
-- `npm run deploy` - Implanta o projeto no GitHub Pages
-- `npm run preview` - Visualiza a versão de produção localmente
+- `npm run dev` - Start the development server
+- `npm run build` - Generate production files in the `dist` folder
+- `npm run preview` - Preview the production build locally
+- `npm run type-check` - Run TypeScript type checking
 
-## Notas importantes
+### Build Configuration
 
-- O script `predeploy` garante que o build seja executado antes da implantação
-- A pasta `dist` não precisa ser commitada no repositório principal
-- O `gh-pages` cria automaticamente a branch `gh-pages` se ela não existir
-- Sempre teste localmente com `npm run preview` antes de implantar
+The project is configured with:
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+- **Node version:** 18 (specified in netlify.toml)
 
-## Solução de problemas
+### Notes
 
-Se encontrar erros durante a implantação:
+- The `dist` folder contains the built application ready for deployment
+- Always test locally with `npm run preview` before deploying
+- The build process automatically optimizes assets for production
+- PWA features are included and will work on the deployed site
 
-1. Verifique se o build local funciona: `npm run build`
-2. Teste a versão de produção: `npm run preview`
-3. Certifique-se de que tem permissões de escrita no repositório
-4. Verifique se a configuração do `base` no `vite.config.ts` está correta
+### Troubleshooting
+
+If you encounter build issues:
+
+1. Clear the build cache: `rm -rf dist && npm run build`
+2. Check that all dependencies are installed: `npm install`
+3. Verify TypeScript compilation: `npm run type-check`
+4. Test the build locally: `npm run preview`
