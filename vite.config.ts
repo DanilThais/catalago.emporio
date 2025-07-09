@@ -18,8 +18,7 @@ export default defineConfig(({ command, mode }) => {
   const basePath = getBasePath();
   
   return {
-  }
-  plugins: [
+    plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
